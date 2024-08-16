@@ -1,6 +1,6 @@
-# Project name
+# Template
 
-Description
+Template
 
 **Clone the repository:**
 
