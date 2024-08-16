@@ -2,7 +2,7 @@
 
 Template
 
-**Clone the repository (ssh):**
+**Clone the repository:**
 
    ```bash
    git clone git@oregon01:global/template.git
