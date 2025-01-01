@@ -1,0 +1,12 @@
+#main_footer {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background: inherit;
+    box-shadow: 0 0 var(--spacing) var(--back);
+    width: 100%;
+    justify-content: center;
+} #main_footer p {
+    font-size: var(--font-xsmall);
+}

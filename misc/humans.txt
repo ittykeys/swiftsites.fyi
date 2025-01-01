@@ -1,0 +1,12 @@
+/* TEAM */
+	Author: IttyKeys
+	Contact: peter@peternilsson.info
+	Twitter: @ittykeys
+	Location: Helsingborg, Sweden
+    Site: https://peternilsson.info
+
+/* SITE */
+	Last update: 2024/12/19
+    Standards: HTML5, CSS3
+    Components: Apache SSI
+    Software: VSCodium

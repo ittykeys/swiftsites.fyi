@@ -1,0 +1,29 @@
+article {
+    margin-top: var(--spacing);
+    max-width: var(--content);
+} article, article header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+} article header h2 {
+    width: fit-content;
+    height: var(--icon-size);
+    font-size: var(--font-medium);
+    font-weight: bold;
+} article header figure {
+    height: fit-content;
+} article header h2 figure img {
+    width: calc(var(--icon-size) - 0.5rem);
+    margin-left: var(--small-spacing)
+} article header figure img {
+    border-radius: var(--icon-size);
+    width: var(--icon-size);
+    float: left;
+} article time, article header a {
+    font-size: var(--font-xsmall);
+} article section {
+    font-size: var(--font-article);
+    margin: calc(var(--spacing) - 0.5rem) 0;
+} article p {
+    margin: calc(var(--spacing) - 0.5rem) 0;
+}

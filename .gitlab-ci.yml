@@ -1,0 +1,7 @@
+stages:
+  - deploy
+deploy_job:
+  stage: deploy
+  script:
+    - rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./ pidde@web01:/data/www/ittykeys/swiftsites.fyi
+    - ssh -i ~/.ssh/runner pidde@web01 "/data/www/ittykeys/swiftsites.fyi/misc/articlegen.sh /data/www/ittykeys/swiftsites.fyi/articles/"

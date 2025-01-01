@@ -1,0 +1,52 @@
+#main_header, #main_nav, #main_nav ul, #main_nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} #main_header {
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    background: inherit;
+    box-shadow: 0 0 var(--spacing) var(--back);
+} #main_header h1 {
+    margin-top: var(--medium-spacing);
+    line-height: 1;
+    font-size: var(--font-big);
+    color: var(--orange);
+} #bigx {
+    left: calc(var(--small-spacing) + 0.75rem) !important;
+    color: var(--orange);
+} #hamburger, #bigx {
+    display: none;
+    position: absolute;
+    left: calc(var(--small-spacing) + 0.25rem);
+} #hamburger svg, #bigx {
+    cursor: pointer;
+    width: calc(var(--icon-size) + 0.25rem) !important;
+    height: calc(var(--icon-size) + 0.25rem) !important;
+} #hamburger svg:active, #bigx:active {
+    opacity: 0.65;
+} #main_header svg {
+    vertical-align: bottom;
+    width: var(--icon-size);
+    height: var(--icon-size);
+} #main_header svg path, #main_header svg rect {
+    fill: var(--orange);
+} #main_header p {
+    text-align: center;
+    font-size: var(--font-small);
+} #main_nav {
+    padding: calc(var(--icon-size) - 1.5rem) 0;
+    margin-top: calc(var(--icon-size) - 1.25rem);
+    background-color: #323638;
+    font-size: var(--font-normal);
+} #main_nav ul {
+    list-style-type: none;
+} #main_nav ul li {
+    min-width: var(--item-size);
+} #main_header h1 a:not(#hamburger, #bigx) {
+   all: unset;
+   cursor: pointer;
+} #main_header h1 a:hover, #main_header h1 a:focus, #main_header h1 a:focus-visible {
+    opacity: 0.65;
+}

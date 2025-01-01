@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100svh;
+    /* overflow-y: scroll; */
+    background-color: var(--back);
+} main, aside {
+    flex-grow: 1;
+    align-content: center;
+}

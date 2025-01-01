@@ -1,0 +1,120 @@
+"All sites tested in Firefox version 133 with a clean profile, tracking protection and other privacy settings turned off. Quad9 DNS used, Swedish IP. No sites are signed in to. 10 seconds spent on site. Site force-reloaded 10 times, cache disabled. No functionality / services tested beyond landing page. Results and testing as unbiased as technically possible. Descriptions may not be :)",,,,,,,,,,,,
+,,,,,,,,,,,,
+"Name","Action taken?","URL","Author / Owner","Category","Size (transit)","No JS size (transit)","# of requests","No JS # of requests","Captured date","Bad / Good","Works w/o JS","Description"
+"SwiftSites","N/A","https://swiftsites.fyi/","IttyKeys","Info / Blog","14 kB","N/A **",1,"N/A **",12/22/24,"Very good","Yes","Because the modern web is bloated and slow"
+"Skaneresa.se","N/A","https://skaneresa.se/","IttyKeys","Travel agency","320 kB","62 kB",19,10,12/27/24,"Good","No","Look up train times in Scania, Sweden"
+"Free Software Foundation","N/A","https://www.fsf.org/","Free Software Foundation","A landing page","1.03 MB","916 kB",45,41,12/22/24,"Good","Yes","“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom.”"
+"Linux Kernel Archives ","N/A","https://kernel.org/","Linux Kernel Organization, Inc.","Archive","96 kB","N/A **",15,"N/A **",12/22/24,"Very good","Yes","“The Linux Kernel Organization is a California Public Benefit Corporation established in 2002 to distribute the Linux kernel “"
+"Perl.org","N/A","https://www.perl.org/","Perl.org ","Info / Blog","477 kB","220 kB",34,24,12/22/24,"Good","Yes","“The Perl Programming Language”"
+"QuidsUp","N/A","https://quidsup.net/","QuidsUp","Info / Blog","174 kB","N/A **",8,"N/A **",12/22/24,"Very good","Yes","QuidsUp"
+"Aftonbladet","Accepted cookies","https://aftonbladet.se/","Schibsted ASA","News","1.60 MB *","700 kB *","60 *","29 *",12/22/24,"Good","Yes","Swedish news magazine, known for its checkmarks"
+"FrogFind!","N/A","http://frogfind.com/","Action Retro","Search Engine Proxy","4 kB","N/A **",3,"N/A **",12/22/24,"Very good","Yes","Search Engine Proxy for DuckDuckGo, retro-computer compatible"
+"Google","N/A","https://www.google.com/","Alphabet Inc.","Search Engine","1.45 MB","66 kB",44,9,12/22/24,"Very good (w/o JS)","Yes","Search engine focused on speed, indexing all of the web and indexing everyOne"
+"NoHello","N/A","https://nohello.net/","Joshua May ?","Entertainment","123 kB","114 kB",20,16,12/22/24,"Very good","Yes ⁹","please don't say just hello in chat"
+"Mozilla","N/A","https://www.mozilla.org/","Mozilla","A landing page","592 kB","840 kB",46,58,12/22/24,"Good","Yes","Landing page for Mozilla, developer of Firefox and Thunderbird"
+"W3Schools","N/A","https://www.w3schools.com/","Refsnes Data","Encyclopedia","1.10 MB","3.47 MB",34,34,12/22/24,"Good","Yes","Encyclopedia for all things web development related"
+"Wikipedia","N/A","https://en.wikipedia.org/wiki/Main_Page","Wikimedia Foundation","Encyclopedia","254 kB *","201 kB *","31 *","32 *",12/22/24,"Very good","Yes","The worlds biggest, entirely free encyclopedia"
+"Telegram","N/A","https://telegram.org","Telegram Messenger Inc.","Communication","1.74 MB","765 kB",62,22,12/22/24,"Good","Yes","Telegram is an encrypted messaging platform developed by Pavel Durov"
+"Shopify","N/A","https://www.shopify.com/","Shopify Inc.","Ecommerce","2.02 MB","1.99 MB",35,77,12/22/24,"Good","Yes","Provides ecommerce services"
+"Evernote","Accepted cookies","https://evernote.com/","Bending Spoons S.p.A.","Office suite","1.46 MB","1.03 MB",63,49,12/22/24,"Good","Yes","Office suite with focus on taking notes"
+"Berkshire Hathaway Inc.","N/A","https://www.berkshirehathaway.com/","Berkshire Hathaway Inc.","Info / Blog","219 kB","5 kB",7,3,12/22/24,"Very good","Yes","“Berkshire Hathaway is a holding company run by Warren Buffett”"
+"Scalemates","N/A","https://www.scalemates.com/","Scalemates?","Ecommerce?","258 kB *","105 kB *","34 *","24 *",12/22/24,"Good","Yes","Sells stuff? Kits? Paints?"
+"Core Web Vitals","N/A","https://www.corewebvitals.io/","Arjen Karel","Web services","258 kB","260 kB",17,32,12/22/24,"Good","Yes","“Your Core Web Vitals Optimized”"
+"WpAlpha","N/A","https://wpalpha.io/","WpAlpha ?","Web services","913 kB","715 kB",41,28,12/22/24,"Good","Yes","“Website Speed Optimization that improves your conversion rates”"
+"Bazoš","N/A","https://www.bazos.sk/","Bazoš?","Ecommerce","245 kB *","82 kB *","27 *","25 *",12/22/24,"Good","Yes","Slovakian ecommerce site"
+"SVT","Accepted cookies","https://www.svt.se/","SVT","News","930 kB *","4.45 MB *","69 *","108 *",12/22/24,"Good","Yes","Swedish public service"
+"SR","N/A","https://sverigesradio.se/","SR","News","1.13 MB *","1.14 MB *","32 *","31 *",12/22/24,"Good","Sorta","Swedish public service"
+"DEV Community","Accepted cookies","https://dev.to","DEV Community","Social Media","1.16 MB *","606 kB","44 *","69*",12/22/24,"Good","Yes","“We're a place where coders share, stay up-to-date and grow their careers. “"
+"CSS-Tricks","N/A","https://css-tricks.com/","Digital Ocean","Web services","1.09 MB","1.20 MB",43,30,12/22/24,"Good","Yes","CSS-Tricks"
+"Tim Kadlex","N/A","https://timkadlec.com/","Tim Kadlec","Info / Blog","113 kB","107 kB",20,18,12/22/24,"Good","Yes","“I help organizations improve the effectiveness and reach of their sites by ensuring that they perform quickly—and stay that way.”"
+"Infrequently Noted","N/A","https;//infrequently.org/","Alex Russell","Info / Blog","276 kB","537 kB",8,"108 *",12/22/24,"Good","Yes","“Alex Russell on browsers, standards, and the process of progress.”"
+"Adactio","N/A","https://adactio.com/","Jeremy Keith","Info / Blog","398 kB","925 kB",12,15,12/22/24,"Good","Yes","“Adactio is the online home of Jeremy Keith, a web developer and author living and working in Brighton, England. “"
+,,,,,,,,,,,,
+"Mint","N/A","https://mint.intuit.com/","Intuit Inc.","Financial services","428 kB","429 error",109,"429 error",12/22/24,"Edge Case","No","Financial & budgeting services "
+"Internet Archive","N/A","https://archive.org/","Internet Archive","Archive","868 kB","404 error",85,"404 error",12/22/24,"Edge Case","No","Archive for literally everything, also hosts WayBack Machine"
+"Facebook","N/A","https://facebook.com/","Meta","Social Media","1.32 MB","290 kB",65,14,12/22/24,"Edge Case","Sorta","Social media platform from Meta, mainly for moms in their 60s"
+"X","N/A","https://x.com/","X Corp","Social Media","2.80 MB","75 kB",81,4,12/22/24,"Edge Case","No","Social media platform from X Corp, originally known as Twitter, mainly for right-winged lunatics"
+"ChatGPT","N/A","https://chatgpt.com/","OpenAI, Inc.","AI platform","1.42 MB","35 kB",97,7,12/22/24,"Edge Case","No","Interactive large language models from OpenAI, known for the LLMs hallucinations"
+"Netflix","N/A","https://www.netflix.com/","Netflix Inc.","Streaming Service","2.40 MB","1.04 MB",45,21,12/22/24,"Edge Case","No","Movies and series streaming platform that destroyed Hollywood then came begging for its stars"
+"DuckDuckGo","N/A","https://duckduckgo.com/","DuckDuckGo","Search Engine","2.56 MB","44.43 kB",71,7,12/22/24,"Edge Case","Yes","Search engine focused on privacy"
+"Pornhub","Age consented","https://pornhub.com","Pornhub","Streaming Service","1.96 MB *","1.55 MB *","104 *","114 *",12/22/24,"Edge Case","No","Porn site focused on creators, like YouTube but for porn"
+"LinkedIn","N/A","https://www.linkedin.com/","Microsoft Corporation","Social Media","990 kB","92 kB",90,6,12/22/24,"Edge Case","Sorta","Social media & job avertisement platform from Microsoft, known for lunatics lying about daily activities"
+"eBay","N/A","https://www.ebay.com/","eBay Inc.","Ecommerce","5.82 MB *","2.38 MB *","84 *","31 *",12/22/24,"Edge Case","Sorta","Auction & all-around ecommerce platform"
+"Xvideos.com","Age consented & accepted cookies","https://www.xvideos.com/","XVideos.com","Streaming Service","2.52 MB *","348 kB *","75 *","9 *",12/22/24,"Edge Case","Sorta","Porn site with videos from both indie creators and companies "
+"Microsoft","N/A","https://www.microsoft.com/","Microsoft Corporation","A landing page","1.13 MB","464 kB",111,44,12/22/24,"Edge Case","Yes","Company known for software development, made famous by MS-DOS, Windows and their anti-competitive behavior"
+"Quora","N/A","https://quora.com/","Quora, Inc.","Social Media","2.49 MB","176 kB",57,13,12/22/24,"Edge Case","No","Get answers to questions, maybe"
+"Canva","N/A","https://www.canva.com/","Canva, Inc.","A landing page","1.62 MB","1.70 MB",77,87,12/22/24,"Edge Case","Yes","Graphic design tools"
+"AliExpress","N/A","https://www.aliexpress.com/","Alibaba Group","Ecommerce","3.69 MB *","1.71 MB *","236 *","66 *",12/22/24,"Edge Case","Sorta","Ecommerce platform known for cheap goods, mainly from China"
+"PayPal","N/A","https://www.paypal.com/","PayPal Holdings, Inc.","Payment Service","1.58 MB","359 kB",53,12,12/22/24,"Edge Case","Sorta","A payment platform where you can send money to anyone, anywhere"
+"Indeed","N/A","htps://www.indeed.com/ *","Indeed, Inc.","Job board","2.38 MB","142 kB",129,15,12/22/24,"Edge Case","Yes","Job advertisement platform"
+,,,,,,,,,,,,
+"YouTube","N/A","https://www.youtube.com/","Alphabet Inc.","Streaming Service","3.14 MB *","384 kB","235 *",14,12/22/24,"Bad","No","“Broadcast yourself”"
+"Instagram","N/A","https://instagram.com/","Meta","Social Media","3.24 MB","301 kB",70,4,12/22/24,"Bad","No","Social media platform from Meta, known for thirst-traps"
+"WhatsApp","N/A","https://www.whatsapp.com/","Meta","Communication","6.53 MB","6.14 MB",59,31,12/22/24,"Bad","No","Encrypted communication platform known for Meta having the key to said encryption"
+"Reddit","N/A","https://reddit.com/","Reddit, Inc","Social Media","8.04 MB *","2.98 MB *","410 *","44 *",12/22/24,"Bad","Yes","Social media platform full of people that haven’t touched grass in years"
+"Yahoo!","Accepted cookies","https://yahoo.com/","Yahoo! Inc.","Does-it-all","3.04 MB *","836 kB","157 *",27,12/22/24,"Bad","Sorta","Originally famous for its search engine and website links, now nobody knows what they do including themselves"
+"AOL","N/A","https://www.aol.com/","Yahoo! Inc.","Does-it-all","8.49 MB *","1.77 MB *","1038 * ****","294 *",12/22/24,"Very bad ¹⁰","Sorta","They’re still around??"
+"Amazon","N/A","https://amazon.com/","Amazon.com, Inc.","Ecommerce","4.30 MB *","1.46 MB *","269 *",141,12/22/24,"Bad","Sorta","Ecommerce platform known for customers returning a lot of the stuff they buy when drunk on a Wednesday night"
+"TikTok","N/A","https://tiktok.com/","Bytedance Ltd.","Social Media","15.47 MB *","62 kB","356*",2,12/22/24,"Bad","No","Idk, something the kids do nowadays"
+"Bing","N/A","https://bing.com/","Microsoft Corporation","Search Engine","4.79 MB *","294 kB","414 *",7,12/22/24,"Very bad ¹","No","Search engine known for being the competitor to Google"
+"Twitch","N/A","https://twitch.tv/","Twitch Interactive Inc.","Streaming Service","6.18 MB *","60 kB","144 *",3,12/22/24,"Bad","No","Live streaming service known for gamers getting cancelled and doxxed"
+"CNN","N/A","https://edition.cnn.com ***","Cable News Network","News","13.11 MB *","3.67 MB *","240 *",63,12/22/24,"Very bad ²","Yes","American news site"
+"Yandex.ru","N/A","https://dzen.ru/ ***","Yandex LLC","Does-it-all","9.95 MB *","1.20 MB *","288 *",37,12/22/24,"Bad","Yes","Russian does-it-all site"
+"Taboola","N/A","https://www.taboola.com/","Taboola, Inc.","Advertising / SEO","13.28 MB","4.36 MB",124,74,12/22/24,"Very bad ³","Yes","Advertising"
+"The Weather Channel","Accepted cookies","https://weather.com/","The Weather Company, LLC ","News","13.13 MB *","1.48 MB *","873 * ****","49 *",12/22/24,"Very bad ⁴","Yes","American weather news site"
+"Live.com","N/A","https://www.microsoft.com/en-us/microsoft-365/outlook/ ***","Microsoft Corporation","Mail","7.40 MB","8.40 MB",96,84,12/22/24,"Bad","Sorta","Mail service from Microsoft"
+"Naver","N/A","https://www.naver.com/","Naver Co., Ltd.","Does-it-all","6.87 MB *","515 kB","248 *",6,12/22/24,"Bad","No","South Korean does-it-all site"
+"Office.com / Microsoft 365","N/A","htttps://www.office.com/","Microsoft Corporation","Office suite","24.45 MB ****","23.99 MB ****",56,32,12/22/24,"Bad","No","Office suite from Microsoft"
+"VK","N/A","https://vk.com","VK","Social Media","3.58 MB","170 kB",153,7,12/22/24,"Bad","No","Russian social media platform"
+"OpenAI","N/A","https://openai.com","OpenAI, Inc.","A landing page","528.21 MB ****","131 MB ****",259,100,12/22/24,"Very bad ⁶","Yes","Company known for creating large language models using copyrighted material"
+"Pinterest","N/A","https://www.pinterest.com/","Pinterest, Inc.","Social Media","15.16 MB","65 kB",413,7,12/22/24,"Bad","No","Social media site focused on design and pictures?"
+"Discord","N/A","https://discord.com/","Discord Inc.","Communication","10.87 MB","7.80 MB",134,96,12/22/24,"Bad","Yes","Kids screaming into microphones or something"
+"GitHub","N/A","https://github.com/","GitHub, Inc.","A landing page","5.04 MB","2.52 MB",118,52,12/22/24,"Bad","Yes","Version control service originally made by Linus Torvalds now owned by Microsoft"
+"Apple","N/A","https://www.apple.com/","Apple, Inc.","A landing page","6.26 MB","1.75 MB",56,27,12/22/24,"Bad","Yes","Company first known for its computers, now known for expensive glass slabs"
+"Globo","N/A","https://www.globo.com/","Globo Comunicação e Participações S.A","News","8.40 MB","4.55 MB",410,83,12/22/24,"Very bad ⁷","Yes","Portugese news site"
+"Spotify","N/A","https://open.spotify.com/ ***","Spotify Technology S.A.","Entertainment","4.03 MB","533 kB",156,10,12/22/24,"Bad","No","Company known for making a music streaming service that cheats indies of their royalties"
+"Roblox","N/A","https://www.roblox.com/","Roblox Corporation","Entertainment","2.62 MB","268 kB",170,33,12/22/24,"Bad","No","Idk, something the kids do nowadays"
+"Mail.ru","N/A","https://mail.ru","VK","Does-it-all","10.71 MB","317 kB",368,33,12/22/24,"Bad","No","Russian mail service"
+"IMDb","N/A","https://www.imdb.com/","IMDb.com, Inc.","Encyclopedia","4.48 MB","2.19 MB",163,58,12/22/24,"Bad","Yes","The webs movie database, known for giving good movies a low rating"
+"The New York Times","Accepted cookies & agreed to terms","https://www.nytimes.com/","The New York Times Company  ","News","5.25 MB","2.43 MB",208,82,12/22/24,"Bad","Yes","American news magazine"
+"Marca","Accepted cookies","https://www.marca.com/","Unidad Editorial Información Deportiva, S.L.U","News","12.35 MB","1.75 MB",340,120,12/22/24,"Very bad ⁸","Yes","Spanish sports magazine"
+"BBC","Accepted cookies","https://www.bbc.om/ ***","British Broadcasting Corporation","News","4.76 MB *","2.12 MB *","292 *","49 *",12/22/24,"Bad","Yes","British media organization"
+"ESPN","Accepted cookies","https://www.espn.com/","ESPN Enterprises, Inc.","News","14.62 MB *","623 kB","895 * ****","66*",12/22/24,"Very bad ¹¹","Yes","American sports news"
+"Samsung","Accepted cookies","https://www.samsung.com/","Samsung Group","A landing page","11.16 MB","659 kB",249,20,12/22/24,"Bad","Yes","Electronics company known for bloated smartphones"
+"Temu","Accepted cookies","https://www.temu.com/","Pinduoduo Inc.","Ecommerce","4.43 MB *","267 kB *","396 *","28 *",12/22/24,"Bad","Sorta","Ecommerce platform known for Very cheap garbage"
+"Booking","N/A","https://www.booking.com/","Booking Holdings Inc.","Travel agency","5.19 MB","1.22 MB",221,64,12/22/24,"Bad","Yes","Flight, hotel and other travel related booking service"
+"Zoom","N/A","https://www.zoom.com/","Zoom Communications, Inc.","Communication","5.34 MB","336 kB",153,14,12/22/24,"Bad","No","Video conferencing platform known for people transforming into cats"
+"Uol","Accepted cookies","https://www.uol.com.br/","Universo Online S.A.","News","6.13 MB *","3.46 MB *","429 *","193 *",12/22/24,"Bad","Yes","Brazilian news site"
+"Daiilymail","Accepted cookies","https://www.dailymail.co.uk/","Daily Mail and General Trust","News","55.12 MB *","9.82 MB *","1459 * ****","552 * ****",12/22/24,"Very bad ¹²","Yes","British news magazine"
+"Dailymotion","Accepted cookies","https://www.dailymotion.com/","Canal + S.A.","Streaming Service","9.02 MB *","116 kB","190 *",5,12/22/24,"Bad","No","French online video sharing platform"
+,,,,,,,,,,,,
+"One thing I’ve noticed is that the more profit-driven a company / website is, the worse the website is. Highly ironic.",,,,,,,,,,,,
+"Notice also that almost all websites deemed good works without JS.",,,,,,,,,,,,
+"Sizes in kB rounded to nearest whole number",,,,,,,,,,,,
+"Explain descisions, especially edge cases:",,,,,,,,,,,,
+"¹ There’s no reason for a search engine to do 414 requests and load 4.79 MB of data at entry page",,,,,,,,,,,,
+"² There’s no reason for a news site to do 240 requests and load 13.11 MB of data",,,,,,,,,,,,
+"³ How ironic that a platform doing ads and SEO stuff have such a terrible landing page",,,,,,,,,,,,
+"⁴ I just wanna see the weather and it does 873 requests and loads 13.13 MB of data",,,,,,,,,,,,
+"⁵ This is just the landing page for Microsoft 365, don’t even wanna think about how much it loads when you enter the service",,,,,,,,,,,,
+"⁶ This is just a landing page for a company and they make me download over half a gigabyte of data, jesus christ",,,,,,,,,,,,
+"⁷ There’s no reason for a news site to do 410 requests",,,,,,,,,,,,
+"⁸ There’s no reason for a news site to do 340 requests and load 12.35 MB of data",,,,,,,,,,,,
+"⁹ If you pass cloudflare protection first",,,,,,,,,,,,
+"¹⁰ That’s a lot of requests…",,,,,,,,,,,,
+"¹¹ There’s no reason for a news site to do 895 requests and load 14.62 MB of data",,,,,,,,,,,,
+"¹² There’s no reason for a news site to do 1459 (!!) requests and load 55.12 MB of data",,,,,,,,,,,,
+,,,,,,,,,,,,
+"Descrepancy of higher No JS sizes may be because attempt to optimize loading using XHR / Some JS framework",,,,,,,,,,,,
+"“Sorta”: functionality / visibility limited",,,,,,,,,,,,
+"“Does-it-all”: All kinds of services such as blogs, shopping, info, search etc",,,,,,,,,,,,
+"* Content is dynamic / changes at reloads (news sites for example)",,,,,,,,,,,,
+"** Loads no JS",,,,,,,,,,,,
+"*** Redirected",,,,,,,,,,,,
+"**** Holy shit",,,,,,,,,,,,
+,,,,,,,,,,,,
+"How to contribute",,,,,,,,,,,,
+,,,,,,,,,,,,
+"“performance is an application concern, not the platform’s fault”. It was decided to target Developer Experience™ for the long-term, not site speed.",,,,,,,,,,,,
+,,,,,,,,,,,,
+"But rembember; “Don't let the pursuit of tomorrow diminish the joy of today”",,,,,,,,,,,,

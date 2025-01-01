@@ -1,0 +1,75 @@
+Title: What?
+Article ID: intro
+Subtitle Image: ../img/lightbulb.webp
+Subtitle Caption: Light bulb
+Subtitle Alt: Light bulb
+Author Image: ../img/ik.svg
+Author URL: https://github.com/ittykeys/
+Author Caption: IttyKeys
+Author Alt: IttyKeys
+==section==
+==p==
+Imagine if every light bulb in your home was using ten times more energy than needed, just because it could.
+==br==
+That would waste said energy, be more expensive and damage the environment.
+==br==
+For no reason.
+==/p==
+==p==
+==ul==
+==strong==
+What happens:
+==/strong==
+==li==
+Websites that are bloated use more server resources, more energy, more data (what about people on limited plans?), which is both costly and environmentally damaging.
+==/li==
+==strong==
+What you do:
+==/strong==
+==li==
+Optimize those light bulbs (your website code) so they only use as much energy as needed, making Everything more efficient.
+==/li==
+==li==
+Stop being lazy. Like for this site, I've done a custom backend solution for articles and whatnot.
+==/li==
+==li==
+Don't listen to everything PMs / POs and clients request.
+==/li==
+==li==
+Swear to
+apath:https://pledge-of-the-computing-professional.org/
+aria:Go to The Pledge of The Computing Professional
+==a==
+this pledge.
+==/a==
+==/li==
+==/ul==
+==/p==
+==p==
+==strong==
+Result:
+==/strong==
+==br==
+Lower costs, faster load times and a more sustainable web.
+==br==
+Compare for yourself between the good and bad examples
+apath:sitelists
+aria:Go to the sitelists
+==inta==
+being collected.
+==/inta==
+==/p==
+==/section==
+==section==
+==blockquote==
+“Simplicity is the ultimate sophistication.”
+==br==
+– William Gaddis, The Recognitions (1955) p. 457
+==/blockquote==
+==br==
+==blockquote==
+“Less is more.”
+==br==
+– Robert Browning, Andrea del Sarto (1855)
+==/blockquote==
+==/section==

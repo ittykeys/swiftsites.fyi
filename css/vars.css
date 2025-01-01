@@ -1,0 +1,20 @@
+:root {
+    --back: #17171C;
+    --orange: #EF7C2E;
+    --text: #E2EFF8;
+    --text-focus: #ACB9C2;
+    --text-active: #7F8E99;
+    --font-big: 210%;
+    --font-medium: 125%;
+    --font-normal: 102%;
+    --font-article: 90%;
+    --font-small: 85%;
+    --font-xsmall: 65%;
+    --line-height: 1.75rem;
+    --item-size: 10rem;
+    --icon-size: 2rem;
+    --spacing: 1rem;
+    --medium-spacing: 0.75rem;
+    --small-spacing: 0.25rem;
+    --content: 50vw;
+}

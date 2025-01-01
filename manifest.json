@@ -1,0 +1,44 @@
+{
+  "short_name": "SwiftSites",
+  "name": "SwiftSitess official website",
+  "icons": [
+    {
+      "src": "/img/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#af094f",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#af094f",
+  "shortcuts": [
+    {
+      "name": "SwiftSitess songs",
+      "short_name": "Songs",
+      "description": "SwiftSitess songs",
+      "url": "songs",
+      "icons": [{ "src": "/img/icon192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "SwiftSites links",
+      "short_name": "Links",
+      "description": "SwiftSitess links",
+      "url": "stalk",
+      "icons": [{ "src": "/img/icon192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "SwiftSites's How?",
+      "short_name": "How?",
+      "description": "SwiftSites's How?",
+      "url": "#how",
+      "icons": [{ "src": "/img/icon192.png", "sizes": "192x192" }]
+    }
+  ]
+}

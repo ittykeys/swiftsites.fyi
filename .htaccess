@@ -1,0 +1,40 @@
+DirectoryIndex /html/pages/intro.html
+
+ErrorDocument 400 /html/errorpages/400.html
+ErrorDocument 401 /html/errorpages/401.html
+ErrorDocument 403 /html/errorpages/403.html
+ErrorDocument 404 /html/errorpages/404.html
+ErrorDocument 405 /html/errorpages/405.html
+ErrorDocument 408 /html/errorpages/408.html
+ErrorDocument 414 /html/errorpages/414.html
+ErrorDocument 500 /html/errorpages/500.html
+ErrorDocument 502 /html/errorpages/502.html
+ErrorDocument 503 /html/errorpages/503.html
+ErrorDocument 504 /html/errorpages/504.html
+Options +Includes
+AddType text/html .html .txt .php .css
+AddOutputFilter INCLUDES .html .txt .php .css
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options nosniff
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+Header set X-FRAME-OPTIONS "sameorigin"
+Header set Content-Security-Policy "frame-ancestors 'self';"
+Header set X-Robots-Tag "all"
+
+RewriteEngine On
+RewriteRule .* - [E=YEAR:%{TIME_YEAR}]
+RewriteRule ^intro$ /html/pages/intro.html [L]
+RewriteRule ^rants$ /html/pages/rants.html [L]
+RewriteRule ^sitelists$ /html/pages/sitelists.html [L]
+RewriteRule ^links$ /html/pages/links.html [L]
+RewriteRule ^about$ /html/pages/about.html [L]
+RewriteRule ^contact$ /html/pages/contact.html [L]
+RewriteRule ^robots\.txt$ /misc/robots.txt [L]
+RewriteRule ^ads\.txt$ /misc/ads.txt [L]
+RewriteRule ^security\.txt$ /misc/security.txt [L]
+RewriteRule ^google6eba66c33878e8bb.html$ /html/google6eba66c33878e8bb.html [L]
+
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+</Files>
