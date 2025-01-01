@@ -124,7 +124,7 @@ for INPUT_FILE in "$INPUT_DIR"/*.ikmd; do
 EOF
     fi
 done
-TIMESTAMP_FILE="last_updated.txt"
+TIMESTAMP_FILE="$INPUT_DIR/../misc/last_updated.txt"
 CURRENT_TIME=$(date +"%B %d %Y %I:%M %p")
 echo "$CURRENT_TIME" > "$TIMESTAMP_FILE"
 END_TIME=$(date +%s%3N)
