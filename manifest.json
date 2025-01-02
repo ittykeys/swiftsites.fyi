@@ -1,44 +1,60 @@
 {
   "short_name": "SwiftSites",
-  "name": "SwiftSitess official website",
+  "name": "SwiftSites",
   "icons": [
     {
-      "src": "/img/icon192.png",
+      "src": "/img/logoo.png",
       "type": "image/png",
       "sizes": "192x192"
-    },
-    {
-      "src": "/img/icon512.png",
-      "type": "image/png",
-      "sizes": "512x512"
     }
   ],
   "start_url": "/",
-  "background_color": "#af094f",
+  "background_color": "#17171C",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#af094f",
+  "theme_color": "#EF7C2E",
   "shortcuts": [
     {
-      "name": "SwiftSitess songs",
-      "short_name": "Songs",
-      "description": "SwiftSitess songs",
-      "url": "songs",
-      "icons": [{ "src": "/img/icon192.png", "sizes": "192x192" }]
+      "name": "SwiftSites - Intro",
+      "short_name": "Intro",
+      "description": "What?",
+      "url": "intro",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     },
     {
-      "name": "SwiftSites links",
+      "name": "SwiftSites - Sitelists",
+      "short_name": "Sitelists",
+      "description": "Good and bad examples of sites",
+      "url": "sitelists",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "SwiftSites - Rants",
+      "short_name": "Rants",
+      "description": "Good and bad examples of sites",
+      "url": "rants",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "SwiftSites - Links",
       "short_name": "Links",
-      "description": "SwiftSitess links",
-      "url": "stalk",
-      "icons": [{ "src": "/img/icon192.png", "sizes": "192x192" }]
+      "description": "Collection of relevant links",
+      "url": "links",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     },
     {
-      "name": "SwiftSites's How?",
-      "short_name": "How?",
-      "description": "SwiftSites's How?",
-      "url": "#how",
-      "icons": [{ "src": "/img/icon192.png", "sizes": "192x192" }]
+      "name": "SwiftSites - About",
+      "short_name": "About",
+      "description": "Info about the site",
+      "url": "about",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "SwiftSites - Contact",
+      "short_name": "Contact",
+      "description": "Contact info",
+      "url": "contact",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     }
   ]
 }

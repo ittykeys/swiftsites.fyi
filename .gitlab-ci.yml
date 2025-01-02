@@ -7,3 +7,4 @@ deploy_job:
     - ssh -i ~/.ssh/runner pidde@web01 "/data/www/ittykeys/swiftsites.fyi/misc/articlegen.sh /data/www/ittykeys/swiftsites.fyi/articles/"
     - ssh -i ~/.ssh/runner pidde@web01 "cd /data/www/ittykeys/swiftsites.fyi && rm articles/template.html"
     - ssh -i ~/.ssh/runner pidde@web01 "cd /data/www/ittykeys/swiftsites.fyi && rm articles/*.ikmd"
+    - ssh -i ~/.ssh/runner pidde@web01 "cd /data/www/ittykeys/swiftsites.fyi && echo '$(date +'%B %d %Y %I:%M %p')' > 'misc/last_updated.txt'"

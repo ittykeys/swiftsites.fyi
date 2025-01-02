@@ -1,12 +1,12 @@
 #!/bin/bash
-START_TIME=$(date +%s%3N)
-INPUT_DIR="$1"
-if [[ -z "$INPUT_DIR" ]]; then
+start_time=$(date +%s%3N)
+input_dir="$1"
+if [[ -z "$input_dir" ]]; then
     echo "Usage: $0 <directory>"
     exit 1
 fi
-if [[ ! -d "$INPUT_DIR" ]]; then
-    echo "Directory not found: $INPUT_DIR"
+if [[ ! -d "$input_dir" ]]; then
+    echo "Directory not found: $input_dir"
     exit 1
 fi
 convert_to_html_tag() {
@@ -94,10 +94,9 @@ process_file() {
 </article>
 EOF
 }
-for input_file in "$INPUT_DIR"/*.ikmd; do
+for input_file in "$input_dir"/*.ikmd; do
     [[ -f "$input_file" ]] && process_file "$input_file"
 done
-echo "$(date +"%B %d %Y %I:%M %p")" > "$INPUT_DIR/../misc/last_updated.txt"
-END_TIME=$(date +%s%3N)
-EXECUTION_TIME=$((END_TIME - START_TIME))
-echo "Execution time: $EXECUTION_TIME milliseconds"
+end_time=$(date +%s%3N)
+execution_time=$((END_TIME - start_time))
+echo "Execution time: $execution_time milliseconds"
