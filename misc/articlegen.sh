@@ -60,7 +60,13 @@ for INPUT_FILE in "$INPUT_DIR"/*.ikmd; do
                     ;;
                 Created:*)
                     CRE_DATETIME="${line#Created: }"
-                    CRE_READABLE_DATE=$(date -d "$CRE_DATETIME" +"%B %d %Y %I:%M %p")
+                    if date -d "$CRE_DATETIME" &> /dev/null; then
+                        ISO_CRE_DATE=$(date -d "$CRE_DATETIME" +"%Y-%m-%dT%H:%M:%S")
+                        CRE_READABLE_DATE=$(date -d "$CRE_DATETIME" +"%B %d %Y %I:%M %p")
+                    else
+                        ISO_CRE_DATE="No created date available"
+                        CRE_READABLE_DATE="No created date available"
+                    fi
                     ;;
                 *)
                     case "$line" in
@@ -116,7 +122,7 @@ for INPUT_FILE in "$INPUT_DIR"/*.ikmd; do
             </a>
             <figcaption class="hidden">$AUTHOR_CAPTION</figcaption>
         </figure>
-        <time datetime="$CRE_DATETIME">Created: $READABLE_CRE_DATE</time>
+        <time datetime="$ISO_CRE_DATE">Created: $CRE_READABLE_DATE</time>
     </header>
     $CONTENT
     <time style="margin: var(--spacing) 0;" datetime="$DATETIME">Modified: $READABLE_DATE</time>
