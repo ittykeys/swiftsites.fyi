@@ -1,138 +1,103 @@
 #!/bin/bash
 START_TIME=$(date +%s%3N)
 INPUT_DIR="$1"
-if [ -z "$INPUT_DIR" ]; then
+if [[ -z "$INPUT_DIR" ]]; then
     echo "Usage: $0 <directory>"
     exit 1
 fi
-if [ ! -d "$INPUT_DIR" ]; then
+if [[ ! -d "$INPUT_DIR" ]]; then
     echo "Directory not found: $INPUT_DIR"
     exit 1
 fi
 convert_to_html_tag() {
     local line="$1"
     if [[ "$line" =~ ==([a-zA-Z0-9]+)== ]]; then
-        tag="${BASH_REMATCH[1]}"
-        echo "<$tag>"
+        echo "<${BASH_REMATCH[1]}>"
     elif [[ "$line" =~ ==/([a-zA-Z0-9]+)== ]]; then
-        tag="${BASH_REMATCH[1]}"
-        echo "</$tag>"
+        echo "</${BASH_REMATCH[1]}>"
     fi
 }
-for INPUT_FILE in "$INPUT_DIR"/*.ikmd; do
-    if [ -f "$INPUT_FILE" ]; then
-        OUTPUT_FILE="${INPUT_FILE%.ikmd}.html"
-        MOD_DATE=$(date -r "$INPUT_FILE" +"%Y-%m-%dT%H:%M:%S")
-        READABLE_MOD_DATE=$(date -r "$INPUT_FILE" +"%B %d %Y %I:%M %p")
-        CRE_DATE=$(stat --format='%W' "$INPUT_FILE")
-        ISO_CRE_DATE=$( [[ "$CRE_DATE" -ne 0 ]] && date -d @$CRE_DATE +"%Y-%m-%dT%H:%M:%S" || echo "No created date available" )
-        READABLE_CRE_DATE=$( [[ "$CRE_DATE" -ne 0 ]] && date -d @$CRE_DATE +"%B %d %Y %I:%M %p" || echo "No created date available" )
-        TITLE=""
-        ARTICLE_ID=""
-        SUBTITLE_IMG=""
-        SUBTITLE_CAPTION=""
-        SUBTITLE_ALT=""
-        AUTHOR_IMG=""
-        AUTHOR_URL=""
-        AUTHOR_CAPTION=""
-        AUTHOR_ALT=""
-        DATETIME=""
-        CRE_DATETIME=""
-        READABLE_DATE=""
-        CRE_READABLE_DATE=""
-        CONTENT=""
-        A_PATH=""
-        A_ARIA=""
-        while IFS= read -r line || [ -n "$line" ]; do
-            case "$line" in
-                Title:*) TITLE="${line#Title: }" ;;
-                "Article ID:"*) ARTICLE_ID="${line#Article ID: }" ;;
-                "Subtitle Image:"*) SUBTITLE_IMG="${line#Subtitle Image: }" ;;
-                "Subtitle Caption:"*) SUBTITLE_CAPTION="${line#Subtitle Caption: }" ;;
-                "Subtitle Alt:"*) SUBTITLE_ALT="${line#Subtitle Alt: }" ;;
-                "Author Image:"*) AUTHOR_IMG="${line#Author Image: }" ;;
-                "Author URL:"*) AUTHOR_URL="${line#Author URL: }" ;;
-                "Author Caption:"*) AUTHOR_CAPTION="${line#Author Caption: }" ;;
-                "Author Alt:"*) AUTHOR_ALT="${line#Author Alt: }" ;;
-                Datetime:*)
-                    DATETIME="${line#Datetime: }"
-                    READABLE_DATE=$(date -d "$DATETIME" +"%B %d %Y %I:%M %p")
-                    ;;
-                Created:*)
-                    CRE_DATETIME="${line#Created: }"
-                    if date -d "$CRE_DATETIME" &> /dev/null; then
-                        ISO_CRE_DATE=$(date -d "$CRE_DATETIME" +"%Y-%m-%dT%H:%M:%S")
-                        CRE_READABLE_DATE=$(date -d "$CRE_DATETIME" +"%B %d %Y %I:%M %p")
-                    else
-                        ISO_CRE_DATE="No created date available"
-                        CRE_READABLE_DATE="No created date available"
-                    fi
-                    ;;
-                *)
-                    case "$line" in
-                        apath:*) A_PATH="${line#apath:}" ;;
-                        aria:*) A_ARIA="${line#aria:}" ;;
-                        #imgpath:*) IMG_PATH="${line#imgpath:}" ;;
-                        #webpimg:*) WEBP_IMG="${line#webpimg:}" ;;
-                        #svgimg:*) SVG_IMG="${line#svgimg:}" ;;
-                        ==a==*) CONTENT+="<a class='alink' href='$A_PATH' title='$A_ARIA' aria-label='$A_ARIA' target='_blank'>"$'\n\t' ;;
-                        ==/a==*) CONTENT+="</a>"$'\n\t' ;;
-                        ==imgpath==*) CONTENT+="<!--#set var="FILE_PATH" value='${line#imgpath: }'-->"$'\n\t' ;;
-                        ==webpimg==*) CONTENT+="<img src='data:image/webp;base64,<!--#exec cgi="../misc/base64.sh" -->' title='${line#webpimg: }' alt='${line#webpimg: }'>"$'\n\t' ;;
-                        ==svgimg==*) CONTENT+="<img src='data:image/svg+xml;base64,<!--#exec cgi="../misc/base64.sh" -->' title='${line#svgimg: }' alt='${line#svgimg: }'>"$'\n\t' ;;
-                        ==inta==*) CONTENT+="<a class='alink' href='$A_PATH' title='$A_ARIA' aria-label='$A_ARIA'>"$'\n\t' ;;
-                        ==/inta==*) CONTENT+="</a>"$'\n\t' ;;
-                        *)
-                            tag_html=$(convert_to_html_tag "$line")
-                            if [ -n "$tag_html" ]; then
-                                CONTENT+="$tag_html"$'\n\t'
-                            elif [[ -n "$line" ]]; then
-                                CONTENT+="$line"$'\n\t'
-                            fi
-                            ;;
-                    esac
-                    ;;
-            esac
-        done < "$INPUT_FILE"
-        if [ -z "$DATETIME" ]; then
-            DATETIME="$MOD_DATE"
-            READABLE_DATE="$READABLE_MOD_DATE"
-        fi
-        if [ -z "$CRE_DATETIME" ]; then
-            CRE_DATETIME="$ISO_CRE_DATE"
-            CRE_READABLE_DATE="$READABLE_CRE_DATE"
-        fi
-        CONTENT=${CONTENT%$'\n\t'}
-        cat <<EOF > "$OUTPUT_FILE"
-<article id="$ARTICLE_ID">
+process_file() {
+    local input_file="$1"
+    local output_file="${input_file%.ikmd}.html"
+    local creation_date=$(stat --format='%W' "$input_file")
+    local iso_creation_date readable_creation_date
+    iso_creation_date=$(date -d @$creation_date +"%Y-%m-%dT%H:%M:%S")
+    readable_creation_date=$(date -d @$creation_date +"%B %d %Y %I:%M %p")
+    local title="" article_id="" subtitle_img="" subtitle_caption="" subtitle_alt=""
+    local author_img="" author_url="" author_caption="" author_alt=""
+    local cre_datetime="" cre_readable_date="" content=""
+    while IFS= read -r line || [[ -n "$line" ]]; do
+        case "$line" in
+            Title:*) title="${line#Title: }" ;;
+            "Article ID:"*) article_id="${line#Article ID: }" ;;
+            "Subtitle Image:"*) subtitle_img="${line#Subtitle Image: }" ;;
+            "Subtitle Caption:"*) subtitle_caption="${line#Subtitle Caption: }" ;;
+            "Subtitle Alt:"*) subtitle_alt="${line#Subtitle Alt: }" ;;
+            "Author Image:"*) author_img="${line#Author Image: }" ;;
+            "Author URL:"*) author_url="${line#Author URL: }" ;;
+            "Author Caption:"*) author_caption="${line#Author Caption: }" ;;
+            "Author Alt:"*) author_alt="${line#Author Alt: }" ;;
+            Published:*)
+                cre_datetime="${line#Published: }"
+                iso_creation_date=$(date -d "$cre_datetime" +"%Y-%m-%dT%H:%M:%S")
+                cre_readable_date=$(date -d "$cre_datetime" +"%B %d %Y %I:%M %p")
+                ;;
+            *)
+                case "$line" in
+                    apath:*) a_path="${line#apath:}" ;;
+                    aria:*) a_aria="${line#aria:}" ;;
+                    #imgpath:*) IMG_PATH="${line#imgpath:}" ;;
+                    #webpimg:*) WEBP_IMG="${line#webpimg:}" ;;
+                    #svgimg:*) SVG_IMG="${line#svgimg:}" ;;
+                    ==a==*) content+="<a class='alink' href='$a_path' title='$a_aria' aria-label='$a_aria' target='_blank'>"$'\n\t' ;;
+                    ==/a==*) content+="</a>"$'\n\t' ;;
+                    ==imgpath==*) content+="<!--#set var="FILE_PATH" value='${line#imgpath: }'-->"$'\n\t' ;;
+                    ==webpimg==*) content+="<img src='data:image/webp;base64,<!--#exec cgi="../misc/base64.sh" -->' title='${line#webpimg: }' alt='${line#webpimg: }'>"$'\n\t' ;;
+                    ==svgimg==*) content+="<img src='data:image/svg+xml;base64,<!--#exec cgi="../misc/base64.sh" -->' title='${line#svgimg: }' alt='${line#svgimg: }'>"$'\n\t' ;;
+                    ==inta==*) content+="<a class='alink' href='$a_path' title='$a_aria' aria-label='$a_aria'>"$'\n\t' ;;
+                    ==/inta==*) content+="</a>"$'\n\t' ;;
+                    *)
+                        tag_html=$(convert_to_html_tag "$line")
+                        if [ -n "$tag_html" ]; then
+                            content+="$tag_html"$'\n\t'
+                        elif [[ -n "$line" ]]; then
+                            content+="$line"$'\n\t'
+                        fi
+                        ;;
+                esac
+                ;;
+        esac
+    done < "$input_file"
+    cat <<EOF > "$output_file"
+<article id="$article_id">
     <header>
         <h2>
-            $TITLE
+            $title
             <figure style="float: right;">
-                <!--#set var="FILE_PATH" value="$SUBTITLE_IMG"-->
-                <img src='data:image/webp;base64,<!--#exec cgi="../misc/base64.sh" -->' title="$SUBTITLE_CAPTION" alt="$SUBTITLE_ALT" />
-                <figcaption class="hidden">$SUBTITLE_CAPTION</figcaption>
+                <!--#set var="FILE_PATH" value="$subtitle_img"-->
+                <img src='data:image/webp;base64,<!--#exec cgi="../misc/base64.sh" -->' title="$subtitle_caption" alt="$subtitle_alt" />
+                <figcaption class="hidden">$subtitle_caption</figcaption>
             </figure>
         </h2>
         <figure>
-            <a href="$AUTHOR_URL" target="_blank">
-                <!--#set var="FILE_PATH" value="$AUTHOR_IMG"-->
-                <img src='data:image/svg+xml;base64,<!--#exec cgi="../misc/base64.sh" -->' title="$AUTHOR_CAPTION" alt="$AUTHOR_ALT" />
-                $AUTHOR_CAPTION
+            <a href="$author_url" target="_blank">
+                <!--#set var="FILE_PATH" value="$author_img"-->
+                <img src='data:image/svg+xml;base64,<!--#exec cgi="../misc/base64.sh" -->' title="$author_caption" alt="$author_alt" />
+                $author_caption
             </a>
-            <figcaption class="hidden">$AUTHOR_CAPTION</figcaption>
+            <figcaption class="hidden">$author_caption</figcaption>
         </figure>
-        <time datetime="$ISO_CRE_DATE">Created: $CRE_READABLE_DATE</time>
+        <time datetime="$iso_creation_date">$cre_readable_date</time>
     </header>
-    $CONTENT
-    <time style="margin: var(--spacing) 0;" datetime="$DATETIME">Modified: $READABLE_DATE</time>
+    $content
 </article>
 EOF
-    fi
+}
+for input_file in "$INPUT_DIR"/*.ikmd; do
+    [[ -f "$input_file" ]] && process_file "$input_file"
 done
-TIMESTAMP_FILE="$INPUT_DIR/../misc/last_updated.txt"
-CURRENT_TIME=$(date +"%B %d %Y %I:%M %p")
-echo "$CURRENT_TIME" > "$TIMESTAMP_FILE"
+echo "$(date +"%B %d %Y %I:%M %p")" > "$INPUT_DIR/../misc/last_updated.txt"
 END_TIME=$(date +%s%3N)
 EXECUTION_TIME=$((END_TIME - START_TIME))
 echo "Execution time: $EXECUTION_TIME milliseconds"
