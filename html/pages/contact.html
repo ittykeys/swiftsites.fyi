@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<!--#set var="TITLE" value="Contact"-->
-		<!--#set var="DESC" value="Contact info"-->
+		<!--#set var="DESC" value="Get in touch"-->
 		<!--#include virtual="../global/head.html"-->
 		<style>
 			#main_nav li:nth-child(6) a {
@@ -19,16 +19,25 @@
 		<!--#include virtual="../global/header.html"-->
 		<main>
 			<section>
-                Here I'll display contact info
+				<article id="contact">
+					<header>
+						<h2>
+							Get in touch
+							<figure style="float: right; margin-left: 0.5rem;">
+								<!--#include virtual="../../img/letter.svg"-->
+								<figcaption class="hidden">Letter</figcaption>
+							</figure>
+						</h2>
+					</header>
+					<section>
+						<div class="contact_info">
+							<label>Email:</label> <a class="alink" href="mailto:contact@swiftsites.fyi" target="_blank" title="Email SwiftSites">contact@swiftsites.fyi</a></div>
+							<label>GitHub repo:</label> <a class="alink" href="https://github.com/ittykeys/swiftsites.fyi" target="_blank" title="SwiftSites GitHub repo">https://github.com/ittykeys/swiftsites.fyi</a>
+						</div>
+					</section>
+				</article>
 			</section>
 		</main>
-		<!-- <aside>
-			<h2>Related Links</h2>
-			<ul>
-				<li><a href="link1.html">Related Link 1</a></li>
-				<li><a href="link2.html">Related Link 2</a></li>
-			</ul>
-		</aside> -->
 		<!--#include virtual="../global/footer.html"-->
 	</body>
 </html>

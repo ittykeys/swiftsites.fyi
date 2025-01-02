@@ -20,13 +20,9 @@ convert_to_html_tag() {
 process_file() {
     local input_file="$1"
     local output_file="${input_file%.ikmd}.html"
-    local creation_date=$(stat --format='%W' "$input_file")
-    local iso_creation_date readable_creation_date
-    iso_creation_date=$(date -d @$creation_date +"%Y-%m-%dT%H:%M:%S")
-    readable_creation_date=$(date -d @$creation_date +"%B %d %Y %I:%M %p")
     local title="" article_id="" subtitle_img="" subtitle_caption="" subtitle_alt=""
     local author_img="" author_url="" author_caption="" author_alt=""
-    local cre_datetime="" cre_readable_date="" content=""
+    local cre_datetime="" cre_readable_date="" iso_creation_date="" content=""
     while IFS= read -r line || [[ -n "$line" ]]; do
         case "$line" in
             Title:*) title="${line#Title: }" ;;
@@ -98,5 +94,5 @@ for input_file in "$input_dir"/*.ikmd; do
     [[ -f "$input_file" ]] && process_file "$input_file"
 done
 end_time=$(date +%s%3N)
-execution_time=$((END_TIME - start_time))
+execution_time=$((end_time - start_time))
 echo "Execution time: $execution_time milliseconds"

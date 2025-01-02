@@ -31,28 +31,28 @@
     {
       "name": "SwiftSites - Rants",
       "short_name": "Rants",
-      "description": "Good and bad examples of sites",
+      "description": "Brace yourself",
       "url": "rants",
       "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     },
     {
       "name": "SwiftSites - Links",
       "short_name": "Links",
-      "description": "Collection of relevant links",
+      "description": "Relevant links",
       "url": "links",
       "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     },
     {
       "name": "SwiftSites - About",
       "short_name": "About",
-      "description": "Info about the site",
+      "description": "Why?",
       "url": "about",
       "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     },
     {
       "name": "SwiftSites - Contact",
       "short_name": "Contact",
-      "description": "Contact info",
+      "description": "Get in touch",
       "url": "contact",
       "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     }

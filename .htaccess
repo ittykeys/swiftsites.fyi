@@ -12,8 +12,8 @@ ErrorDocument 502 /html/errorpages/502.html
 ErrorDocument 503 /html/errorpages/503.html
 ErrorDocument 504 /html/errorpages/504.html
 Options +Includes
-AddType text/html .html .txt .php .css
-AddOutputFilter INCLUDES .html .txt .php .css
+AddType text/html .html .txt .css
+AddOutputFilter INCLUDES .html .txt .css
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options nosniff
 Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"

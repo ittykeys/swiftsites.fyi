@@ -12,9 +12,9 @@ article {
     font-weight: bold;
 } article header figure {
     height: fit-content;
-} article header h2 figure img {
+} article header h2 figure img, #contact header h2 figure svg {
     width: calc(var(--icon-size) - 0.5rem);
-    margin-left: var(--small-spacing)
+    margin-left: var(--small-spacing);
 } article header figure img {
     border-radius: var(--icon-size);
     width: var(--icon-size);

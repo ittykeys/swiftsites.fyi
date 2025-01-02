@@ -19,18 +19,84 @@
 		<!--#include virtual="../global/header.html"-->
 		<main>
 			<section>
-                First we'll have info
-                <br>
-                Then the the list of sites
+				<section>
+					<article id="sitelists">
+						<header>
+							<h2>
+								Good and bad examples of sites
+							</h2>
+						</header>
+						<section id="info">
+							<p>
+								All sites tested in Firefox version 133 with a clean profile, tracking protection and other privacy settings turned off.<br>
+								Quad9 DNS used, Swedish IP, no sites are signed in to, 10 seconds spent on site.<br>
+								Site force-reloaded 10 times, cache disabled. No functionality / services tested beyond landing page.<br>
+								Sizes in kB rounded to nearest whole number.<br>
+								Results and testing as unbiased as technically possible; descriptions may not be :)
+							</p>
+							<a class="alink" href="#list_good">Good sites</a> ,
+							<a class="alink" href="#list_edgecases">Edgecases</a> ,
+							<a class="alink" href="#list_bad">Bad sites</a> ,
+							<a class="alink" href="#conclusions">Conclusions</a> ,
+							<a class="alink" href="#footnotes">Footnotes</a>
+						</section>
+						<section class="list" id="list_good">
+							<h3>
+								Good sites
+							</h3>
+							<!--#include virtual="../../csv/sites_good.html"-->
+						</section>
+						<section class="list" id="list_edgecases">
+							<h3>
+								Edgecases
+							</h3>
+							<!--#include virtual="../../csv/sites_edgecases.html"-->
+						</section>
+						<section class="list" id="list_bad">
+							<h3>
+								Bad sites
+							</h3>
+							<!--#include virtual="../../csv/sites_bad.html"-->
+						</section>
+						<section id="conclusions">
+							<h3>
+								Conclusions
+							</h3>
+							<p>
+								One thing I’ve noticed is that the more profit-driven a company / website is, the worse the website is. Highly ironic.<br>
+								Notice also that almost all websites deemed good works without JS.<br>
+								Descrepancy of higher "No JS" sizes may be because attempt to optimize loading using XHR / some JS framework.<br>
+							</p>
+						</section>
+						<section id="footnotes">
+							<h3>
+								Footnotes
+							</h3>
+							<p>
+								“Sorta”: functionality / visibility limited<br>
+								“Does-it-all”: All kinds of services such as blogs, shopping, info, search etc<br>
+								* Content is dynamic / changes at reloads (news sites for example)<br>
+								** Loads no JS<br>
+								*** Redirected<br>
+								**** Holy shit<br>
+								¹ There’s no reason for a search engine to do 414 requests and load 4.79 MB of data at entry page<br>
+								² There’s no reason for a news site to do 240 requests and load 13.11 MB of data<br>
+								³ How ironic that a platform doing ads and SEO stuff have such a terrible landing page<br>
+								⁴ I just wanna see the weather and it does 873 requests and loads 13.13 MB of data<br>
+								⁵ This is just the landing page for Microsoft 365, don’t even wanna think about how much it loads when you enter the service<br>
+								⁶ This is just a landing page for a company and they make me download over half a gigabyte of data, jesus christ<br>
+								⁷ There’s no reason for a news site to do 410 requests<br>
+								⁸ There’s no reason for a news site to do 340 requests and load 12.35 MB of data<br>
+								⁹ If you pass cloudflare protection first<br>
+								¹⁰ That’s a lot of requests…<br>
+								¹¹ There’s no reason for a news site to do 895 requests and load 14.62 MB of data<br>
+								¹² There’s no reason for a news site to do 1459 (!!) requests and load 55.12 MB of data<br>
+							</p>
+						</section>
+					</article>
+				</section>
 			</section>
 		</main>
-		<!-- <aside>
-			<h2>Related Links</h2>
-			<ul>
-				<li><a href="link1.html">Related Link 1</a></li>
-				<li><a href="link2.html">Related Link 2</a></li>
-			</ul>
-		</aside> -->
 		<!--#include virtual="../global/footer.html"-->
 	</body>
 </html>

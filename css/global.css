@@ -42,3 +42,27 @@ strong {
 img {
     display: block;
 }
+:target {
+    scroll-margin-top: calc(var(--spacing) * 10);
+}
+h3 {
+    font-weight: bold;
+    font-size: var(--font-medium);
+}
+table {
+    display: flex;
+    font-size: var(--font-article);
+    border-collapse: collapse;
+    margin: var(--spacing) 0;
+    width: 100%;
+    text-align: left;
+} table, th, td {
+    line-height: 1;
+    border: 1px solid;
+    overflow: hidden;
+} th {
+    font-weight: bold;
+} th, td {
+    min-width: 10rem;
+    max-height: 1rem;
+}

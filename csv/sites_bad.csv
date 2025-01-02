@@ -1,0 +1,40 @@
+Name,Action taken?,URL,Author / Owner,Category,Size (transit),No JS size (transit),# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
+YouTube,N/A,https://www.youtube.com/,Alphabet Inc.,Streaming Service,3.14 MB *,384 kB,235 *,14,12/22/24,Bad,No,“Broadcast yourself”
+Instagram,N/A,https://instagram.com/,Meta,Social Media,3.24 MB,301 kB,70,4,12/22/24,Bad,No,Social media platform from Meta known for thirst-traps
+WhatsApp,N/A,https://www.whatsapp.com/,Meta,Communication,6.53 MB,6.14 MB,59,31,12/22/24,Bad,No,Encrypted communication platform known for Meta having the key to said encryption
+Reddit,N/A,https://reddit.com/,Reddit  Inc,Social Media,8.04 MB *,2.98 MB *,410 *,44 *,12/22/24,Bad,Yes,Social media platform full of people that haven’t touched grass in years
+Yahoo!,Accepted cookies,https://yahoo.com/,Yahoo! Inc.,Does-it-all,3.04 MB *,836 kB,157 *,27,12/22/24,Bad,Sorta,Originally famous for its search engine and website links now nobody knows what they do including themselves
+AOL,N/A,https://www.aol.com/,Yahoo! Inc.,Does-it-all,8.49 MB *,1.77 MB *,1038 * ****,294 *,12/22/24,Very bad ¹⁰,Sorta,They’re still around??
+Amazon,N/A,https://amazon.com/,Amazon.com  Inc.,Ecommerce,4.30 MB *,1.46 MB *,269 *,141,12/22/24,Bad,Sorta,Ecommerce platform known for customers returning a lot of the stuff they buy when drunk on a Wednesday night
+TikTok,N/A,https://tiktok.com/,Bytedance Ltd.,Social Media,15.47 MB *,62 kB,356*,2,12/22/24,Bad,No,Idk something the kids do nowadays
+Bing,N/A,https://bing.com/,Microsoft Corporation,Search Engine,4.79 MB *,294 kB,414 *,7,12/22/24,Very bad ¹,No,Search engine known for being the competitor to Google
+Twitch,N/A,https://twitch.tv/,Twitch Interactive Inc.,Streaming Service,6.18 MB *,60 kB,144 *,3,12/22/24,Bad,No,Live streaming service known for gamers getting cancelled and doxxed
+CNN,N/A,https://edition.cnn.com ***,Cable News Network,News,13.11 MB *,3.67 MB *,240 *,63,12/22/24,Very bad ²,Yes,American news site
+Yandex.ru,N/A,https://dzen.ru/ ***,Yandex LLC,Does-it-all,9.95 MB *,1.20 MB *,288 *,37,12/22/24,Bad,Yes,Russian does-it-all site
+Taboola,N/A,https://www.taboola.com/,Taboola  Inc.,Advertising / SEO,13.28 MB,4.36 MB,124,74,12/22/24,Very bad ³,Yes,Advertising
+The Weather Channel,Accepted cookies,https://weather.com/,The Weather Company  LLC ,News,13.13 MB *,1.48 MB *,873 * ****,49 *,12/22/24,Very bad ⁴,Yes,American weather news site
+Live.com,N/A,https://www.microsoft.com/en-us/microsoft-365/outlook/ ***,Microsoft Corporation,Mail,7.40 MB,8.40 MB,96,84,12/22/24,Bad,Sorta,Mail service from Microsoft
+Naver,N/A,https://www.naver.com/,Naver Co.  Ltd.,Does-it-all,6.87 MB *,515 kB,248 *,6,12/22/24,Bad,No,South Korean does-it-all site
+Office.com / Microsoft 365,N/A,htttps://www.office.com/,Microsoft Corporation,Office suite,24.45 MB ****,23.99 MB ****,56,32,12/22/24,Bad,No,Office suite from Microsoft
+VK,N/A,https://vk.com,VK,Social Media,3.58 MB,170 kB,153,7,12/22/24,Bad,No,Russian social media platform
+OpenAI,N/A,https://openai.com,OpenAI  Inc.,A landing page,528.21 MB ****,131 MB ****,259,100,12/22/24,Very bad ⁶,Yes,Company known for creating large language models using copyrighted material
+Pinterest,N/A,https://www.pinterest.com/,Pinterest  Inc.,Social Media,15.16 MB,65 kB,413,7,12/22/24,Bad,No,Social media site focused on design and pictures?
+Discord,N/A,https://discord.com/,Discord Inc.,Communication,10.87 MB,7.80 MB,134,96,12/22/24,Bad,Yes,Kids screaming into microphones or something
+GitHub,N/A,https://github.com/,GitHub  Inc.,A landing page,5.04 MB,2.52 MB,118,52,12/22/24,Bad,Yes,Version control service originally made by Linus Torvalds now owned by Microsoft
+Apple,N/A,https://www.apple.com/,Apple  Inc.,A landing page,6.26 MB,1.75 MB,56,27,12/22/24,Bad,Yes,Company first known for its computers now known for expensive glass slabs
+Globo,N/A,https://www.globo.com/,Globo Comunicação e Participações S.A,News,8.40 MB,4.55 MB,410,83,12/22/24,Very bad ⁷,Yes,Portugese news site
+Spotify,N/A,https://open.spotify.com/ ***,Spotify Technology S.A.,Entertainment,4.03 MB,533 kB,156,10,12/22/24,Bad,No,Company known for making a music streaming service that cheats indies of their royalties
+Roblox,N/A,https://www.roblox.com/,Roblox Corporation,Entertainment,2.62 MB,268 kB,170,33,12/22/24,Bad,No,Idk something the kids do nowadays
+Mail.ru,N/A,https://mail.ru,VK,Does-it-all,10.71 MB,317 kB,368,33,12/22/24,Bad,No,Russian mail service
+IMDb,N/A,https://www.imdb.com/,IMDb.com  Inc.,Encyclopedia,4.48 MB,2.19 MB,163,58,12/22/24,Bad,Yes,The webs movie database known for giving good movies a low rating
+The New York Times,Accepted cookies & agreed to terms,https://www.nytimes.com/,The New York Times Company  ,News,5.25 MB,2.43 MB,208,82,12/22/24,Bad,Yes,American news magazine
+Marca,Accepted cookies,https://www.marca.com/,Unidad Editorial Información Deportiva  S.L.U,News,12.35 MB,1.75 MB,340,120,12/22/24,Very bad ⁸,Yes,Spanish sports magazine
+BBC,Accepted cookies,https://www.bbc.om/ ***,British Broadcasting Corporation,News,4.76 MB *,2.12 MB *,292 *,49 *,12/22/24,Bad,Yes,British media organization
+ESPN,Accepted cookies,https://www.espn.com/,ESPN Enterprises  Inc.,News,14.62 MB *,623 kB,895 * ****,66*,12/22/24,Very bad ¹¹,Yes,American sports news
+Samsung,Accepted cookies,https://www.samsung.com/,Samsung Group,A landing page,11.16 MB,659 kB,249,20,12/22/24,Bad,Yes,Electronics company known for bloated smartphones
+Temu,Accepted cookies,https://www.temu.com/,Pinduoduo Inc.,Ecommerce,4.43 MB *,267 kB *,396 *,28 *,12/22/24,Bad,Sorta,Ecommerce platform known for Very cheap garbage
+Booking,N/A,https://www.booking.com/,Booking Holdings Inc.,Travel agency,5.19 MB,1.22 MB,221,64,12/22/24,Bad,Yes,Flight hotel and other travel related booking service
+Zoom,N/A,https://www.zoom.com/,Zoom Communications  Inc.,Communication,5.34 MB,336 kB,153,14,12/22/24,Bad,No,Video conferencing platform known for people transforming into cats
+Uol,Accepted cookies,https://www.uol.com.br/,Universo Online S.A.,News,6.13 MB *,3.46 MB *,429 *,193 *,12/22/24,Bad,Yes,Brazilian news site
+Daiilymail,Accepted cookies,https://www.dailymail.co.uk/,Daily Mail and General Trust,News,55.12 MB *,9.82 MB *,1459 * ****,552 * ****,12/22/24,Very bad ¹²,Yes,British news magazine
+Dailymotion,Accepted cookies,https://www.dailymotion.com/,Canal + S.A.,Streaming Service,9.02 MB *,116 kB,190 *,5,12/22/24,Bad,No,French online video sharing platform

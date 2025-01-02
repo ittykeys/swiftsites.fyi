@@ -9,3 +9,7 @@ body {
     flex-grow: 1;
     align-content: center;
 }
+#footnotes p {
+    margin-top: var(--spacing);
+    font-size: var(--font-small);
+}
