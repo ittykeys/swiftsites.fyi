@@ -1,4 +1,4 @@
-Name,Action taken?,URL,Author / Owner,Category,Size (transit),No JS size (transit),# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
+Name,Action taken?,URL,Author / Owner,Category,Size,No JS size,# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
 SwiftSites,N/A,https://swiftsites.fyi/,IttyKeys,Info / Blog,14 kB,N/A **,1,N/A **,12/22/24,Very good,Yes,Because the modern web is bloated and slow
 Skaneresa.se,N/A,https://skaneresa.se/,IttyKeys,Travel agency,320 kB,62 kB,19,10,12/27/24,Good,No,Look up train times in Scania Sweden
 Free Software Foundation,N/A,https://www.fsf.org/,Free Software Foundation,A landing page,1.03 MB,916 kB,45,41,12/22/24,Good,Yes,“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom.”

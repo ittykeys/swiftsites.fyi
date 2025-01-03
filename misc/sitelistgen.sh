@@ -12,36 +12,48 @@ fi
 process_file() {
     local input_file="$1"
     local output_file="${input_file%.csv}.html"
-    echo '<table>' > "$output_file"
-    echo '<tr>' >> "$output_file"
-    header_line=$(head -n1 "$input_file" | tr -d '"')
-    echo "$header_line" | tr ',' '\n' | while read header; do
-        echo "<th>$header</th>" >> "$output_file"
-    done
-    echo '</tr>' >> "$output_file"
-    IFS=',' read -r -a headers_array <<< "$header_line"
-    url_column_index=-1
-    for i in "${!headers_array[@]}"; do
-        if [[ "${headers_array[$i]}" == "URL" ]]; then
-            url_column_index=$i
-            break
-        fi
-    done
-    tail -n +2 "$input_file" | while IFS="," read -r -a line; do
-        echo "<tr>" >> "$output_file"
-        for i in "${!line[@]}"; do
-            cell="${line[$i]}"
-            if [[ $i -eq $url_column_index ]]; then
-                cell="<a class='alink' href=\"$cell\" target='_blank'>$cell</a>"
-            fi
-            echo "<td>$(echo "$cell" | tr -d '"')</td>" >> "$output_file"
-        done
-        echo "</tr>" >> "$output_file"
-    done
-    echo '</table>' >> "$output_file"
+    mod_date=$(date -r "$input_file" +"%Y-%m-%dT%H:%M:%S")
+    readable_mod_date=$(date -r "$input_file" +"%B %d %Y %I:%M %p")
+
+    # Write the datetime and opening table tag
+    {
+        echo "<time datetime=\"$mod_date\">Updated: $readable_mod_date</time>"
+        echo '<table>'
+    } > "$output_file"
+
+    # Process the CSV file using awk
+    awk -v output="$output_file" '
+    BEGIN {
+        FS = ","; OFS = "";
+    }
+    NR == 1 {
+        print "<tr>" >> output;
+        for (i = 1; i <= NF; i++) {
+            gsub("\"", "", $i);  # Remove quotes
+            headers[i] = $i;     # Store headers
+            if ($i == "URL") url_col_idx = i;
+            print "<th>" $i "</th>" >> output;
+        }
+        print "</tr>" >> output;
+    }
+    NR > 1 {
+        print "<tr>" >> output;
+        for (i = 1; i <= NF; i++) {
+            gsub("\"", "", $i);  # Remove quotes
+            if (i == url_col_idx) {
+                print "<td><a class=\"alink\" href=\"" $i "\" target=\"_blank\">" $i "</a></td>" >> output;
+            } else {
+                print "<td>" $i "</td>" >> output;
+            }
+        }
+        print "</tr>" >> output;
+    }
+    END {
+        print "</table>" >> output;
+    }' "$input_file"
 }
 for input_file in "$input_dir"/*.csv; do
-    [[ -f "$input_file" ]] && process_file "$input_file"
+    [[ -f "$input_file" ]] && process_file "$input_file" &
 done
 end_time=$(date +%s%3N)
 execution_time=$((end_time - start_time))

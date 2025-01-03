@@ -1,4 +1,4 @@
-Name,Action taken?,URL,Author / Owner,Category,Size (transit),No JS size (transit),# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
+Name,Action taken?,URL,Author / Owner,Category,Size,No JS size,# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
 Debian,N/A,https://debian.org,Debian,Info / Blog,2.06 MB,N/A **,25,N/A **,02/01/25,Edge Case,Yes,“The universal operating system”
 STIM,Accepted cookies,https://www.stim.se/,STIM,Info / Blog,1.09 MB *,876 kB *,52 *,32 *,02/01/25,Edge Case,Yes,“For the love of music since 1923”
 Mint,N/A,https://mint.intuit.com/,Intuit Inc.,Financial services,428 kB,429 error,109,429 error,12/22/24,Edge Case,No,Financial & budgeting services 

@@ -13,3 +13,6 @@ body {
     margin-top: var(--spacing);
     font-size: var(--font-small);
 }
+#list_good time, #list_edgecases time, #list_bad time {
+    font-size: var(--font-small);
+}

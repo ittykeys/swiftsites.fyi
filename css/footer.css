@@ -9,4 +9,6 @@
     justify-content: center;
 } #main_footer p {
     font-size: var(--font-xsmall);
+} #main_footer a {
+    font-size: inherit;
 }

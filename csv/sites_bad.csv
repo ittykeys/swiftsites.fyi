@@ -1,4 +1,4 @@
-Name,Action taken?,URL,Author / Owner,Category,Size (transit),No JS size (transit),# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
+Name,Action taken?,URL,Author / Owner,Category,Size,No JS size,# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
 YouTube,N/A,https://www.youtube.com/,Alphabet Inc.,Streaming Service,3.14 MB *,384 kB,235 *,14,12/22/24,Bad,No,“Broadcast yourself”
 Instagram,N/A,https://instagram.com/,Meta,Social Media,3.24 MB,301 kB,70,4,12/22/24,Bad,No,Social media platform from Meta known for thirst-traps
 WhatsApp,N/A,https://www.whatsapp.com/,Meta,Communication,6.53 MB,6.14 MB,59,31,12/22/24,Bad,No,Encrypted communication platform known for Meta having the key to said encryption
