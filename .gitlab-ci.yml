@@ -8,5 +8,5 @@ deploy_job:
     - ssh -i ~/.ssh/runner pidde@web01 "/data/www/ittykeys/swiftsites.fyi/misc/sitelistgen.sh /data/www/ittykeys/swiftsites.fyi/csv/"
     - ssh -i ~/.ssh/runner pidde@web01 "cd /data/www/ittykeys/swiftsites.fyi && rm articles/template.html"
     - ssh -i ~/.ssh/runner pidde@web01 "cd /data/www/ittykeys/swiftsites.fyi && rm articles/*.ikmd"
-    - rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./csv pidde@cdn01:/data/sites/swiftsites.fyi/
+    - rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./csv/*.csv pidde@cdn01:/data/sites/swiftsites.fyi/csv/
     - ssh -i ~/.ssh/runner pidde@web01 "cd /data/www/ittykeys/swiftsites.fyi && echo '$(date +'%B %d %Y %I:%M %p')' > 'misc/last_updated.txt'"
