@@ -66,3 +66,8 @@ table {
     min-width: 8rem;
     height: 1rem;
 }
+hr {
+    margin: var(--spacing) 0;
+    border-bottom: var(--small-spacing) solid var(--text-active);
+    width: 100%;
+}
