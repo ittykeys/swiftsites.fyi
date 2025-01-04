@@ -1,29 +1,29 @@
-Name,Action taken?,URL,Author / Owner,Category,Size,No JS size,# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
-SwiftSites,N/A,https://swiftsites.fyi/,IttyKeys,Info / Blog,14 kB,N/A **,1,N/A **,12/22/24,Very good,Yes,Because the modern web is bloated and slow
-Skaneresa.se,N/A,https://skaneresa.se/,IttyKeys,Travel agency,320 kB,62 kB,19,10,12/27/24,Good,No,Look up train times in Scania Sweden
-Free Software Foundation,N/A,https://www.fsf.org/,Free Software Foundation,A landing page,1.03 MB,916 kB,45,41,12/22/24,Good,Yes,“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom.”
-Linux Kernel Archives ,N/A,https://kernel.org/,Linux Kernel Organization  Inc.,Archive,96 kB,N/A **,15,N/A **,12/22/24,Very good,Yes,“The Linux Kernel Organization is a California Public Benefit Corporation established in 2002 to distribute the Linux kernel “
-Perl.org,N/A,https://www.perl.org/,Perl.org ,Info / Blog,477 kB,220 kB,34,24,12/22/24,Good,Yes,“The Perl Programming Language”
-QuidsUp,N/A,https://quidsup.net/,QuidsUp,Info / Blog,174 kB,N/A **,8,N/A **,12/22/24,Very good,Yes,QuidsUp
-Aftonbladet,Accepted cookies,https://aftonbladet.se/,Schibsted ASA,News,1.60 MB *,700 kB *,60 *,29 *,12/22/24,Good,Yes,Swedish news magazine known for its checkmarks
-FrogFind!,N/A,http://frogfind.com/,Action Retro,Search Engine Proxy,4 kB,N/A **,3,N/A **,12/22/24,Very good,Yes,Search Engine Proxy for DuckDuckGo retro-computer compatible
-Google,N/A,https://www.google.com/,Alphabet Inc.,Search Engine,1.45 MB,66 kB,44,9,12/22/24,Very good (w/o JS),Yes,Search engine focused on speed indexing all of the web and indexing everyOne
-NoHello,N/A,https://nohello.net/,Joshua May ?,Entertainment,123 kB,114 kB,20,16,12/22/24,Very good,Yes ⁹,please don't say just hello in chat
-Mozilla,N/A,https://www.mozilla.org/,Mozilla,A landing page,592 kB,840 kB,46,58,12/22/24,Good,Yes,Landing page for Mozilla developer of Firefox and Thunderbird
-W3Schools,N/A,https://www.w3schools.com/,Refsnes Data,Encyclopedia,1.10 MB,3.47 MB,34,34,12/22/24,Good,Yes,Encyclopedia for all things web development related
-Wikipedia,N/A,https://en.wikipedia.org/wiki/Main_Page,Wikimedia Foundation,Encyclopedia,254 kB *,201 kB *,31 *,32 *,12/22/24,Very good,Yes,The worlds biggest entirely free encyclopedia
-Telegram,N/A,https://telegram.org,Telegram Messenger Inc.,Communication,1.74 MB,765 kB,62,22,12/22/24,Good,Yes,Telegram is an encrypted messaging platform developed by Pavel Durov
-Shopify,N/A,https://www.shopify.com/,Shopify Inc.,Ecommerce,2.02 MB,1.99 MB,35,77,12/22/24,Good,Yes,Provides ecommerce services
-Evernote,Accepted cookies,https://evernote.com/,Bending Spoons S.p.A.,Office suite,1.46 MB,1.03 MB,63,49,12/22/24,Good,Yes,Office suite with focus on taking notes
-Berkshire Hathaway Inc.,N/A,https://www.berkshirehathaway.com/,Berkshire Hathaway Inc.,Info / Blog,219 kB,5 kB,7,3,12/22/24,Very good,Yes,“Berkshire Hathaway is a holding company run by Warren Buffett”
-Scalemates,N/A,https://www.scalemates.com/,Scalemates?,Ecommerce?,258 kB *,105 kB *,34 *,24 *,12/22/24,Good,Yes,Sells stuff? Kits? Paints?
-Core Web Vitals,N/A,https://www.corewebvitals.io/,Arjen Karel,Web services,258 kB,260 kB,17,32,12/22/24,Good,Yes,“Your Core Web Vitals Optimized”
-WpAlpha,N/A,https://wpalpha.io/,WpAlpha ?,Web services,913 kB,715 kB,41,28,12/22/24,Good,Yes,“Website Speed Optimization that improves your conversion rates”
-Bazoš,N/A,https://www.bazos.sk/,Bazoš?,Ecommerce,245 kB *,82 kB *,27 *,25 *,12/22/24,Good,Yes,Slovakian ecommerce site
-SVT,Accepted cookies,https://www.svt.se/,SVT,News,930 kB *,4.45 MB *,69 *,108 *,12/22/24,Good,Yes,Swedish public service
-SR,N/A,https://sverigesradio.se/,SR,News,1.13 MB *,1.14 MB *,32 *,31 *,12/22/24,Good,Sorta,Swedish public service
-DEV Community,Accepted cookies,https://dev.to,DEV Community,Social Media,1.16 MB *,606 kB,44 *,69*,12/22/24,Good,Yes,“We're a place where coders share stay up-to-date and grow their careers. “
-CSS-Tricks,N/A,https://css-tricks.com/,Digital Ocean,Web services,1.09 MB,1.20 MB,43,30,12/22/24,Good,Yes,CSS-Tricks
-Tim Kadlex,N/A,https://timkadlec.com/,Tim Kadlec,Info / Blog,113 kB,107 kB,20,18,12/22/24,Good,Yes,“I help organizations improve the effectiveness and reach of their sites by ensuring that they perform quickly—and stay that way.”
-Infrequently Noted,N/A,https;//infrequently.org/,Alex Russell,Info / Blog,276 kB,537 kB,8,108 *,12/22/24,Good,Yes,“Alex Russell on browsers standards and the process of progress.”
-Adactio,N/A,https://adactio.com/,Jeremy Keith,Info / Blog,398 kB,925 kB,12,15,12/22/24,Good,Yes,“Adactio is the online home of Jeremy Keith a web developer and author living and working in Brighton England. “
+URL,Action,Author,Category,Size,Size w/o JS,Requests,Requests w/o JS,Captured,Note,Works w/o JS,Description
+https://swiftsites.fyi/,N/A,IttyKeys,Info / Blog,14 kB,N/A **,1,N/A **,12/22/24,Very good :),Yes,Because the modern web is bloated and slow
+https://skaneresa.se/,N/A,IttyKeys,Travel agency,320 kB,62 kB,19,10,12/27/24,Very good :),No,Look up train times in Scania Sweden
+https://www.fsf.org/,N/A,Free Software Foundation,A landing page,1.03 MB,916 kB,45,41,12/22/24,,Yes,“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom.”
+https://kernel.org/,N/A,Linux Kernel Organization  Inc.,Archive,96 kB,N/A **,15,N/A **,12/22/24,Very good,Yes,“The Linux Kernel Organization is a California Public Benefit Corporation established in 2002 to distribute the Linux kernel “
+https://www.perl.org/,N/A,Perl.org ,Info / Blog,477 kB,220 kB,34,24,12/22/24,,Yes,“The Perl Programming Language”
+https://quidsup.net/,N/A,QuidsUp,Info / Blog,174 kB,N/A **,8,N/A **,12/22/24,Very good,Yes,QuidsUp
+https://aftonbladet.se/,Accepted cookies,Schibsted ASA,News,1.60 MB *,700 kB *,60 *,29 *,12/22/24,,Yes,Swedish news magazine known for its checkmarks
+http://frogfind.com/,N/A,Action Retro,Search Engine Proxy,4 kB,N/A **,3,N/A **,12/22/24,Very good,Yes,Search Engine Proxy for DuckDuckGo retro-computer compatible
+https://www.google.com/,N/A,Alphabet Inc.,Search Engine,1.45 MB,66 kB,44,9,12/22/24,Very good (w/o JS),Yes,Search engine focused on speed indexing all of the web and indexing everyOne
+https://nohello.net/,N/A,Joshua May ?,Entertainment,123 kB,114 kB,20,16,12/22/24,Very good,Yes ⁹,please don't say just hello in chat
+https://www.mozilla.org/,N/A,Mozilla,A landing page,592 kB,840 kB,46,58,12/22/24,,Yes,Landing page for Mozilla developer of Firefox and Thunderbird
+https://www.w3schools.com/,N/A,Refsnes Data,Encyclopedia,1.10 MB,3.47 MB,34,34,12/22/24,,Yes,Encyclopedia for all things web development related
+https://en.wikipedia.org/wiki/Main_Page,N/A,Wikimedia Foundation,Encyclopedia,254 kB *,201 kB *,31 *,32 *,12/22/24,Very good,Yes,The worlds biggest entirely free encyclopedia
+https://telegram.org,N/A,Telegram Messenger Inc.,Communication,1.74 MB,765 kB,62,22,12/22/24,,Yes,Telegram is an encrypted messaging platform developed by Pavel Durov
+https://www.shopify.com/,N/A,Shopify Inc.,Ecommerce,2.02 MB,1.99 MB,35,77,12/22/24,,Yes,Provides ecommerce services
+https://evernote.com/,Accepted cookies,Bending Spoons S.p.A.,Office suite,1.46 MB,1.03 MB,63,49,12/22/24,,Yes,Office suite with focus on taking notes
+https://www.berkshirehathaway.com/,N/A,Berkshire Hathaway Inc.,Info / Blog,219 kB,5 kB,7,3,12/22/24,Very good,Yes,“Berkshire Hathaway is a holding company run by Warren Buffett”
+https://www.scalemates.com/,N/A,Scalemates?,Ecommerce?,258 kB *,105 kB *,34 *,24 *,12/22/24,,Yes,Sells stuff? Kits? Paints?
+https://www.corewebvitals.io/,N/A,Arjen Karel,Web services,258 kB,260 kB,17,32,12/22/24,,Yes,“Your Core Web Vitals Optimized”
+https://wpalpha.io/,N/A,WpAlpha ?,Web services,913 kB,715 kB,41,28,12/22/24,,Yes,“Website Speed Optimization that improves your conversion rates”
+https://www.bazos.sk/,N/A,Bazoš?,Ecommerce,245 kB *,82 kB *,27 *,25 *,12/22/24,,Yes,Slovakian ecommerce site
+https://www.svt.se/,Accepted cookies,SVT,News,930 kB *,4.45 MB *,69 *,108 *,12/22/24,,Yes,Swedish public service
+https://sverigesradio.se/,N/A,SR,News,1.13 MB *,1.14 MB *,32 *,31 *,12/22/24,,Sorta,Swedish public service
+https://dev.to,Accepted cookies,DEV Community,Social Media,1.16 MB *,606 kB,44 *,69*,12/22/24,,Yes,“We're a place where coders share stay up-to-date and grow their careers. “
+https://css-tricks.com/,N/A,Digital Ocean,Web services,1.09 MB,1.20 MB,43,30,12/22/24,,Yes,CSS-Tricks
+https://timkadlec.com/,N/A,Tim Kadlec,Info / Blog,113 kB,107 kB,20,18,12/22/24,,Yes,“I help organizations improve the effectiveness and reach of their sites by ensuring that they perform quickly—and stay that way.”
+https;//infrequently.org/,N/A,Alex Russell,Info / Blog,276 kB,537 kB,8,108 *,12/22/24,,Yes,“Alex Russell on browsers standards and the process of progress.”
+https://adactio.com/,N/A,Jeremy Keith,Info / Blog,398 kB,925 kB,12,15,12/22/24,,Yes,“Adactio is the online home of Jeremy Keith a web developer and author living and working in Brighton England. “

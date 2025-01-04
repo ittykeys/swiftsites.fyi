@@ -1,20 +1,20 @@
-Name,Action taken?,URL,Author / Owner,Category,Size,No JS size,# of requests,No JS # of requests,Captured date,Bad / Good,Works w/o JS,Description
-Debian,N/A,https://debian.org,Debian,Info / Blog,2.06 MB,N/A **,25,N/A **,02/01/25,Edge Case,Yes,“The universal operating system”
-STIM,Accepted cookies,https://www.stim.se/,STIM,Info / Blog,1.09 MB *,876 kB *,52 *,32 *,02/01/25,Edge Case,Yes,“For the love of music since 1923”
-Mint,N/A,https://mint.intuit.com/,Intuit Inc.,Financial services,428 kB,429 error,109,429 error,12/22/24,Edge Case,No,Financial & budgeting services 
-Internet Archive,N/A,https://archive.org/,Internet Archive,Archive,868 kB,404 error,85,404 error,12/22/24,Edge Case,No,Archive for literally everything also hosts WayBack Machine
-Facebook,N/A,https://facebook.com/,Meta,Social Media,1.32 MB,290 kB,65,14,12/22/24,Edge Case,Sorta,Social media platform from Meta mainly for moms in their 60s
-X,N/A,https://x.com/,X Corp,Social Media,2.80 MB,75 kB,81,4,12/22/24,Edge Case,No,Social media platform from X Corp originally known as Twitter mainly for right-winged lunatics
-ChatGPT,N/A,https://chatgpt.com/,OpenAI  Inc.,AI platform,1.42 MB,35 kB,97,7,12/22/24,Edge Case,No,Interactive large language models from OpenAI known for the LLMs hallucinations
-Netflix,N/A,https://www.netflix.com/,Netflix Inc.,Streaming Service,2.40 MB,1.04 MB,45,21,12/22/24,Edge Case,No,Movies and series streaming platform that destroyed Hollywood then came begging for its stars
-DuckDuckGo,N/A,https://duckduckgo.com/,DuckDuckGo,Search Engine,2.56 MB,44.43 kB,71,7,12/22/24,Edge Case,Yes,Search engine focused on privacy
-Pornhub,Age consented,https://pornhub.com,Pornhub,Streaming Service,1.96 MB *,1.55 MB *,104 *,114 *,12/22/24,Edge Case,No,Porn site focused on creators like YouTube but for porn
-LinkedIn,N/A,https://www.linkedin.com/,Microsoft Corporation,Social Media,990 kB,92 kB,90,6,12/22/24,Edge Case,Sorta,Social media & job avertisement platform from Microsoft known for lunatics lying about daily activities
-eBay,N/A,https://www.ebay.com/,eBay Inc.,Ecommerce,5.82 MB *,2.38 MB *,84 *,31 *,12/22/24,Edge Case,Sorta,Auction & all-around ecommerce platform
-Xvideos.com,Age consented & accepted cookies,https://www.xvideos.com/,XVideos.com,Streaming Service,2.52 MB *,348 kB *,75 *,9 *,12/22/24,Edge Case,Sorta,Porn site with videos from both indie creators and companies 
-Microsoft,N/A,https://www.microsoft.com/,Microsoft Corporation,A landing page,1.13 MB,464 kB,111,44,12/22/24,Edge Case,Yes,Company known for software development made famous by MS-DOS Windows and their anti-competitive behavior
-Quora,N/A,https://quora.com/,Quora  Inc.,Social Media,2.49 MB,176 kB,57,13,12/22/24,Edge Case,No,Get answers to questions maybe
-Canva,N/A,https://www.canva.com/,Canva  Inc.,A landing page,1.62 MB,1.70 MB,77,87,12/22/24,Edge Case,Yes,Graphic design tools
-AliExpress,N/A,https://www.aliexpress.com/,Alibaba Group,Ecommerce,3.69 MB *,1.71 MB *,236 *,66 *,12/22/24,Edge Case,Sorta,Ecommerce platform known for cheap goods mainly from China
-PayPal,N/A,https://www.paypal.com/,PayPal Holdings  Inc.,Payment Service,1.58 MB,359 kB,53,12,12/22/24,Edge Case,Sorta,A payment platform where you can send money to anyone anywhere
-Indeed,N/A,htps://www.indeed.com/ *,Indeed  Inc.,Job board,2.38 MB,142 kB,129,15,12/22/24,Edge Case,Yes,Job advertisement platform
+URL,Action,Author,Category,Size,Size w/o JS,Requests,Requests w/o JS,Captured,Note,Works w/o JS,Description
+https://debian.org,N/A,Debian,Info / Blog,2.06 MB,N/A **,25,N/A **,02/01/25,,Yes,“The universal operating system”
+https://www.stim.se/,Accepted cookies,STIM,Info / Blog,1.09 MB *,876 kB *,52 *,32 *,02/01/25,,Yes,“For the love of music since 1923”
+https://mint.intuit.com/,N/A,Intuit Inc.,Financial services,428 kB,429 error,109,429 error,12/22/24,,No,Financial & budgeting services 
+https://archive.org/,N/A,Internet Archive,Archive,868 kB,404 error,85,404 error,12/22/24,,No,Archive for literally everything also hosts WayBack Machine
+https://facebook.com/,N/A,Meta,Social Media,1.32 MB,290 kB,65,14,12/22/24,,Sorta,Social media platform from Meta mainly for moms in their 60s
+https://x.com/,N/A,X Corp,Social Media,2.80 MB,75 kB,81,4,12/22/24,,No,Social media platform from X Corp originally known as Twitter mainly for right-winged lunatics
+https://chatgpt.com/,N/A,OpenAI  Inc.,AI platform,1.42 MB,35 kB,97,7,12/22/24,,No,Interactive large language models from OpenAI known for the LLMs hallucinations
+https://www.netflix.com/,N/A,Netflix Inc.,Streaming Service,2.40 MB,1.04 MB,45,21,12/22/24,,No,Movies and series streaming platform that destroyed Hollywood then came begging for its stars
+https://duckduckgo.com/,N/A,DuckDuckGo,Search Engine,2.56 MB,44.43 kB,71,7,12/22/24,,Yes,Search engine focused on privacy
+https://pornhub.com,Age consented,Pornhub,Streaming Service,1.96 MB *,1.55 MB *,104 *,114 *,12/22/24,,No,Porn site focused on creators like YouTube but for porn
+https://www.linkedin.com/,N/A,Microsoft Corporation,Social Media,990 kB,92 kB,90,6,12/22/24,,Sorta,Social media & job avertisement platform from Microsoft known for lunatics lying about daily activities
+https://www.ebay.com/,N/A,eBay Inc.,Ecommerce,5.82 MB *,2.38 MB *,84 *,31 *,12/22/24,,Sorta,Auction & all-around ecommerce platform
+https://www.xvideos.com/,Age consented & accepted cookies,XVideos.com,Streaming Service,2.52 MB *,348 kB *,75 *,9 *,12/22/24,,Sorta,Porn site with videos from both indie creators and companies 
+https://www.microsoft.com/,N/A,Microsoft Corporation,A landing page,1.13 MB,464 kB,111,44,12/22/24,,Yes,Company known for software development made famous by MS-DOS Windows and their anti-competitive behavior
+https://quora.com/,N/A,Quora  Inc.,Social Media,2.49 MB,176 kB,57,13,12/22/24,,No,Get answers to questions maybe
+https://www.canva.com/,N/A,Canva  Inc.,A landing page,1.62 MB,1.70 MB,77,87,12/22/24,,Yes,Graphic design tools
+https://www.aliexpress.com/,N/A,Alibaba Group,Ecommerce,3.69 MB *,1.71 MB *,236 *,66 *,12/22/24,,Sorta,Ecommerce platform known for cheap goods mainly from China
+https://www.paypal.com/,N/A,PayPal Holdings  Inc.,Payment Service,1.58 MB,359 kB,53,12,12/22/24,,Sorta,A payment platform where you can send money to anyone anywhere
+htps://www.indeed.com/ *,N/A,Indeed  Inc.,Job board,2.38 MB,142 kB,129,15,12/22/24,,Yes,Job advertisement platform

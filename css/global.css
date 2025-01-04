@@ -51,20 +51,22 @@ h3 {
 }
 table {
     display: flex;
-    font-size: var(--font-article);
+    font-size: var(--font-xsmall);
     border-collapse: collapse;
     margin: var(--spacing) 0;
-    width: 100%;
     text-align: left;
+    justify-content: center;
 } table, th, td {
     line-height: 1;
-    border: 1px solid;
-    overflow: hidden;
 } th {
     font-weight: bold;
 } th, td {
-    min-width: 8rem;
-    height: 1rem;
+    border: 1px solid;
+    width: var(--item-size-half);
+    overflow: hidden;
+    vertical-align: middle;
+} td {
+
 }
 hr {
     margin: var(--spacing) 0;
