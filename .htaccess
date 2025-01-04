@@ -35,6 +35,8 @@ RewriteRule ^humans\.txt$ /misc/humans.txt [L]
 RewriteRule ^ads\.txt$ /misc/ads.txt [L]
 RewriteRule ^security\.txt$ /misc/security.txt [L]
 RewriteRule ^favicon\.ico$ /img/favicon.ico [L]
+RewriteRule ^sitemap\.xml$ /xml/sitemap.xml [L]
+RewriteRule ^sitemap$ /xml/sitemap.xml [L]
 RewriteRule ^google6eba66c33878e8bb.html$ /html/google6eba66c33878e8bb.html [L]
 
 <Files ~ "^.*\.([Hh][Tt][Aa])">

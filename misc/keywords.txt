@@ -1,0 +1,4 @@
+<!--#set var="PATH1" value="/html/pages/" -->
+<!--#set var="PATH2" value="_tags.txt" -->
+<!--#set var="KEYWORDS_PATH" value="$PATH1$TITLE$PATH2" -->
+<!--#include virtual="${KEYWORDS_PATH}" -->
