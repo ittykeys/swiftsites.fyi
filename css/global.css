@@ -55,7 +55,8 @@ table {
     border-collapse: collapse;
     margin: var(--spacing) 0;
     text-align: left;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow: scroll;
 } table, th, td {
     line-height: 1;
 } th {
