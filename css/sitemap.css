@@ -1,0 +1,9 @@
+#sitemap_h2 {
+    text-align: center;
+}
+#sitemap_table {
+    justify-content: center;
+    font-size: var(--font-article);
+} #sitemap_table th, #sitemap_table td {
+    padding: calc(var(--spacing) - 0.25rem);
+}

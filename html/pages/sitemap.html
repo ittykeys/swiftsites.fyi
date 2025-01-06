@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--#set var="TITLE" value="Sitemap"-->
+		<!--#set var="DESC" value="Visual structure"-->
+		<!--#set var="CANC" value="sitemap"-->
+		<!--#include virtual="../global/head.html"-->
+		<style>
+			#main_nav li:nth-child() a {
+				all: unset;
+			}
+			#main_nav li:nth-child() a:before {
+				content: "";
+			}
+			#sitemap {
+				font-weight: bold;
+				color: var(--orange);
+			}
+			#sitemap:before {
+				content: "> ";
+			}
+		</style>
+	</head>
+	<body>
+		<!--#include virtual="../global/header.html"-->
+		<main>
+			<section>
+				<section>
+					<article id="about">
+						<header>
+							<h2 id="sitemap_h2">
+								Visual structure
+							</h2>
+						</header>
+						<section>
+						<table id="sitemap_table">
+							<p id="start">swiftsites.fyi</p>
+							<hr>
+							<tr>
+								<th>Page</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td><a href="intro">Intro</a></td>
+								<td>What?</td>
+							</tr>
+							<tr>
+								<td><a href="sitelists">Sitelists</a></td>
+								<td>Good and bad examples of sites</td>
+							</tr>
+							<tr>
+								<td><a href="rants">Rants</a></td>
+								<td>Brace yourself</td>
+							</tr>
+							<tr>
+								<td><a href="links">Links</a></td>
+								<td>Relevant links</td>
+							</tr>
+							<tr>
+								<td><a href="about">About</a></td>
+								<td>Why?</td>
+							</tr>
+							<tr>
+								<td><a href="contact">Contact</a></td>
+								<td>Get in touch</td>
+							</tr>
+							<tr>
+								<td><a href="sitemap">Sitemap</a></td>
+								<td>Visual structure</td>
+							</tr>
+						</table>
+						</section>
+					</article>
+				</section>
+			</section>
+		</main>
+		<!--#include virtual="../global/footer.html"-->
+	</body>
+</html>
