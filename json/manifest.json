@@ -55,6 +55,13 @@
       "description": "Get in touch",
       "url": "contact",
       "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "SwiftSites - Sitemap",
+      "short_name": "Sitemap",
+      "description": "Visual structure",
+      "url": "sitemap",
+      "icons": [{ "src": "/img/logoo.png", "sizes": "192x192" }]
     }
   ]
 }
