@@ -14,14 +14,10 @@ process_file() {
     local output_file="${input_file%.csv}.html"
     mod_date=$(date -r "$input_file" +"%Y-%m-%dT%H:%M:%S")
     readable_mod_date=$(date -r "$input_file" +"%B %d %Y %I:%M %p")
-
-    # Write the datetime and opening table tag
     {
         echo "<time datetime=\"$mod_date\">Updated: $readable_mod_date</time>"
         echo '<table>'
     } > "$output_file"
-
-    # Process the CSV file using awk
     awk -v output="$output_file" '
     BEGIN {
         FS = ","; OFS = "";
