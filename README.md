@@ -4,7 +4,7 @@
 
  ## Because the modern web is bloated and slow
 
- Site dedicated to de-bloating the web and collecting good and bad examples
+ Site dedicated to de-bloating the web by ranting and collecting good/bad examples.
 
  ## License
 
