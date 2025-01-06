@@ -42,7 +42,4 @@
     } #main_footer p {
         font-size: calc(var(--font-xsmall) - 10%) !important;
     }
-    body {
-        overflow: visible !important;
-    }
 }

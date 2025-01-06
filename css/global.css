@@ -66,8 +66,6 @@ table {
     width: var(--item-size-half);
     overflow: hidden;
     vertical-align: middle;
-} td {
-
 }
 hr {
     margin: var(--spacing) 0;
