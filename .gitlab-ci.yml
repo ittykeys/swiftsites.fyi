@@ -7,7 +7,7 @@ deploy_job:
       # Initial rsync to webserver excluding .git and .gitlab-ci.yml
       rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./ $webserver:$wwwpath/swiftsites.fyi
       # Generate articles and sitelist, and clean up unwanted files
-      ssh -i ~/.ssh/runner $webserver <<EOF
+      ssh -i ~/.ssh/runner $webserver "
         $wwwpath/swiftsites.fyi/misc/articlegen.sh $wwwpath/swiftsites.fyi/articles/
         $wwwpath/swiftsites.fyi/misc/sitelistgen.sh $wwwpath/swiftsites.fyi/csv/
         rm -f $wwwpath/swiftsites.fyi/articles/template.html
@@ -15,6 +15,6 @@ deploy_job:
         rm -f $wwwpath/swiftsites.fyi/README.md
         rm -f $wwwpath/swiftsites.fyi/LICENSE
         echo "\$(date +'%B %d %Y %I:%M %p')" > $wwwpath/swiftsites.fyi/misc/last_updated.txt
-EOF
+      "
       rsync -az -e "ssh -i ~/.ssh/runner" --exclude=".git/" --exclude=".gitlab-ci.yml" --delete ./csv/*.csv $cdnserver:$cdnpath/swiftsites.fyi/csv/
       ssh -i ~/.ssh/runner $webserver "rm -f $wwwpath/swiftsites.fyi/csv/*.csv"
