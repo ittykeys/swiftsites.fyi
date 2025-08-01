@@ -1,6 +1,7 @@
 URL,Action,Author,Category,Size,Size w/o JS,Requests,Requests w/o JS,Captured,Note,Works w/o JS,Description
 https://swiftsites.fyi/,N/A,IttyKeys,Info / Blog,16 kB,N/A **,1,N/A **,01/06/25,Very good :),Yes,Because the modern web is bloated and slow
 https://skaneresa.se/,N/A,IttyKeys,Travel agency,320 kB,62 kB,19,10,12/27/24,Very good :),No,Look up train times in Scania Sweden
+https://erikekstrommusic.se,N/A,Peter Nilsson,Info / Blog,106 kB,43 kB,29,24,08/01/25,,No,"""Erik Ekströms artistsida - Trubadur & Artist från Kävlinge, Skåne. Läs om mig, hitta låtar, boka spelningar med mera!"""
 https://www.fsf.org/,N/A,Free Software Foundation,A landing page,1.03 MB,916 kB,45,41,12/22/24,,Yes,“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom.”
 https://kernel.org/,N/A,Linux Kernel Organization  Inc.,Archive,96 kB,N/A **,15,N/A **,12/22/24,Very good,Yes,“The Linux Kernel Organization is a California Public Benefit Corporation established in 2002 to distribute the Linux kernel “
 https://www.perl.org/,N/A,Perl.org ,Info / Blog,477 kB,220 kB,34,24,12/22/24,,Yes,“The Perl Programming Language”
