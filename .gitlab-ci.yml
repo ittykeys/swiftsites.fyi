@@ -8,7 +8,7 @@ deploy_job:
       ssh -i ~/.ssh/runner $webserver "
         $wwwpath/swiftsites.fyi/misc/articlegen.sh $wwwpath/swiftsites.fyi/articles/
         $wwwpath/swiftsites.fyi/misc/sitelistgen.sh $wwwpath/swiftsites.fyi/csv/
-        $wwwpath/swiftsites.fyi/misc/linksgen.sh $wwwpath/swiftsites.fyi/html/Links_data.txt $wwwpath/swiftsites.fyi/html/links_data.html
+        $wwwpath/swiftsites.fyi/misc/linksgen.sh $wwwpath/swiftsites.fyi/html/pages/Links_data.txt $wwwpath/swiftsites.fyi/html/pages/links_data.html
         rm -f $wwwpath/swiftsites.fyi/articles/template.html
         rm -f $wwwpath/swiftsites.fyi/articles/*.ikmd
         rm -f $wwwpath/swiftsites.fyi/README.md
