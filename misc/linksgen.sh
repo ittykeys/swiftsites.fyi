@@ -1,6 +1,6 @@
 #!/bin/bash
-INPUT="../html/pages/Links_data.txt"
-OUTPUT="../html/pages/links_data.html"
+INPUT="html/pages/Links_data.txt"
+OUTPUT="html/pages/links_data.html"
 > "$OUTPUT"
 html_escape() {
     sed \
