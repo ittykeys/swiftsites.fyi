@@ -10,13 +10,6 @@ html_escape() {
         -e 's/</\&lt;/g' \
         -e 's/>/\&gt;/g'
 }
-get_title() {
-url="$1"
-curl -Ls -A "Mozilla/5.0" --max-time 10 "$url" 2>/dev/null |
-    grep -i -m1 '<title' |
-    sed -E 's/.*<title[^>]*>(.*)<\/title>.*/\1/I' |
-    tr -d '\n' | sed 's/^[ \t]*//;s/[ \t]*$//'
-}
 trim() {
     local var="$1"
     var="${var#"${var%%[![:space:]]*}"}"
@@ -32,9 +25,6 @@ for ((i=0; i<total; i++)); do
     link_text="$(trim "$link_text")"
     url="$(trim "$url")"
     [ -z "$desc" ] && continue
-    if [ -z "$link_text" ]; then
-        link_text="$(get_title "$url")"
-    fi
     [ -z "$link_text" ] && link_text="$url"
     desc_esc=$(echo "$desc" | html_escape)
     link_text_esc=$(echo "$link_text" | html_escape)
